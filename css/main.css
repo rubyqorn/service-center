@@ -9,6 +9,7 @@
 }
 body {
     background-color: #eff1f1;
+    font-family: 'Roboto', sans-serif;
 }
 * {
     margin: 0px;
@@ -37,7 +38,6 @@ body {
 .navbar-links-list .links-list .list-link a {
     color: #555;
     text-decoration: none;
-    font-family: sans-serif;
     font-size: 15px;
 }
 .navbar-links-list .links-list .list-link a:hover {
@@ -138,13 +138,11 @@ body {
 }
 .modal-content #form-title .title-text {
     margin: 30px 0 20px 0;
-    font-family: sans-serif;
     font-size: 25px;
     color: #fff;
 }
 .modal-content #form-title .preview-text {
     color: rgb(204, 201, 201);
-    font-family: sans-serif;
     font-size: 16px;
     margin: 0 0 15px 0;
 }
@@ -194,7 +192,6 @@ body {
     margin: 0 0 0 6px;
     color: #ddd;
     font-size: 13px;
-    font-family: sans-serif;
 }
 .modal-content #form .privacy-policy input:checked {
     border: 1px solid #ddd;
@@ -229,7 +226,6 @@ body {
 } 
 .repair-navbar .repair-link .repair-title {
     color: #333;
-    font-family: sans-serif;
     text-decoration: none;
 }
 .repair-navbar .repair-link .repair-title span {
@@ -268,7 +264,6 @@ body {
     color: #fff;
     margin-top: 15px;
     font-size: 18px;
-    font-family: sans-serif;
     font-weight: 500;
 }
 /* benefits section */
@@ -294,7 +289,6 @@ body {
 }
 .benefit-item .benefit-title .text {
     font-weight: bold;
-    font-family: sans-serif;
     font-size: 15px;
 }
 .benefit-item .benefits-list {
@@ -302,7 +296,6 @@ body {
     margin-top: 10px;
 }
 .benefit-item .benefits-list .benefits-list-item {
-    font-family: sans-serif;
     font-size: 15px;
     margin: 4px 0 0 0;
     color: #333;
@@ -333,7 +326,6 @@ body {
 }
 #devices #device-selection .col-12 .title {
     margin: 15px 0 0 0;
-    font-family: sans-serif;
     font-size: 15px;
 }
 #devices #device-selection #image {
@@ -375,7 +367,6 @@ body {
     transition: all 0.6s;
 }
 #devices #device-selection #device-info #price {
-    font-family: sans-serif;
     font-size: 13px;
     font-weight: bold;
     margin: 7px 0 0 0;
@@ -411,7 +402,6 @@ body {
 }
 #brands #brands-selection .container span {
     font-size: 8px;
-    font-family: sans-serif;
     color: #333;
     margin: 5px 0;
 }
@@ -435,7 +425,6 @@ body {
 }
 #callback-form .col-12 #form .form-title {
     font-size: 25px;
-    font-family: sans-serif;
     color: #fff;
     margin: 0 5px;
 }
@@ -473,7 +462,6 @@ body {
     text-decoration: none;
     transition-duration: .2s;
     cursor: pointer;
-    font-family: sans-serif;
 }
 #callback-form .col-12 .send-form button:hover {
     background-color: #f3f353;
@@ -545,14 +533,12 @@ body {
 #promotion-slider .slide .title-text {
     font-size: 12px;
     color: #fff;
-    font-family: sans-serif;
 }
 #promotion-slider .title {
     text-align: center;
     font-size: 12px;
     margin: 10px 0 30px 0;
     color: #fff;
-    font-family: sans-serif;
 }
 #promotion-slider .container {
     margin: 0 0 30px 0;
@@ -569,7 +555,6 @@ body {
 }
 #promotion-slider #text {
     color: #fff;
-    font-family: sans-serif;
 }
 #promotion-slider #text p {
     margin: 0 0 10px 0;
@@ -638,7 +623,6 @@ body {
 #about-service #wrapper #title .title-text {
     margin: 20px 0 0 0;
     font-size: 20px;
-    font-family: sans-serif;
     font-weight: bold;
 }
 #about-service #wrapper #description {
@@ -678,7 +662,6 @@ body {
 #repair-process #wrapper #process .process-number {
     padding: 20px 0;
     text-align: right;
-    font-family: sans-serif;
     font-size: 16px;
 }
 #repair-process #wrapper #process #process-image, #process-title, #process-description {
@@ -687,13 +670,11 @@ body {
 #repair-process #wrapper #process #process-title .process-description-title {
     color: #444;
     margin: 10px 0;
-    font-family: sans-serif;
     font-size: 15px
 }
 #repair-process #wrapper #process #process-description .process-description-text {
     color: #222;
     margin: 0 0 20px 0;
-    font-family: sans-serif;
     font-size: 13px
 }
 /* user reviews section */
@@ -769,13 +750,11 @@ body {
 }
 #reviews #review-item #reviewer-info #name {
     font-size: 13px;
-    font-family: sans-serif;
     color: #333;
     margin: 0 0 0 7px;
 }
 #reviews #review-item #review-content {
     margin: 20px 0;
-    font-family: sans-serif;
     font-size: 16px;
     color: #444;
 }
@@ -797,7 +776,6 @@ body {
 }
 #reviews-footer #footer-text .description {
     color: #ddd;
-    font-family: sans-serif;
     font-size: 15px;
     margin: 10px 0 0 0;
 }
@@ -812,7 +790,6 @@ body {
     border-radius: 3%;
     background-color: #fff73f;
     color: #333;
-    font-family: sans-serif;
     font-size: 13px;
 }
 #reviews-footer #social-links .leave-review:hover {
@@ -852,12 +829,10 @@ body {
 }
 #service-contacts #service-contacts-info #contacts-title #logo .title {
     font-size: 18px;
-    font-family: sans-serif;
     color: #333;
 }
 #service-contacts #service-contacts-info #contacts-title #logo .description {
     font-size: 14px;
-    font-family: sans-serif;
     color: #666;
     margin: 3px 0 0 0;
 }
@@ -879,7 +854,6 @@ body {
 #service-contacts #service-contacts-info #contacts-info .title {
     font-size: 15px;
     font-weight: 600;
-    font-family: sans-serif;
 }
 #service-contacts #service-contacts-info #contacts-info #phones .phones {
     margin: 13px 0 0 0;
@@ -887,7 +861,6 @@ body {
 #service-contacts #service-contacts-info #contacts-info #phones .phones .phone a {
     text-decoration: none;
     font-size: 17px;
-    font-family: sans-serif;
     color: #333;
 }
 #service-contacts #service-contacts-info #contacts-info #address {
@@ -919,14 +892,12 @@ body {
 #service-contacts #service-contacts-info #contacts-info #metro .title {
     font-size: 15px;
     font-weight: 600;
-    font-family: sans-serif;
 }
 #service-contacts #service-contacts-info #contacts-info #metro .metro-service-range i {
     color: #df4040;
     margin: 12px 10px 12px 0;
 } 
 #service-contacts #service-contacts-info #contacts-info #metro .metro-service-range span {
-    font-family: sans-serif;
     font-size: 14px;
 }
 #service-contacts #service-contacts-info #contacts-info #metro #index-train {
@@ -941,7 +912,6 @@ body {
 #service-contacts #service-contacts-info #contacts-info #stations .title {
     font-size: 15px;
     font-weight: 600;
-    font-family: sans-serif;
 }
 #service-contacts #service-contacts-info #contacts-info #stations .station-name i {
     font-size: 15px;
@@ -999,7 +969,6 @@ body {
 #footer #information-block #service-resources #logo .logo-text {
     margin: 0 0 0 7px;
     color: #fff;
-    font-family: sans-serif;
 }
 #footer #information-block #service-resources #logo .logo-text .title {
     font-size: 15px;
@@ -1014,7 +983,6 @@ body {
     color: #3a90d9;
     text-decoration: none;
     font-size: 16px;
-    font-family: sans-serif;
 }
 #footer #information-block #service-resources #yandex-rating {
     margin: 0 0 0 30px;
@@ -1031,11 +999,9 @@ body {
     font-size: 22px;
     font-weight: bold;
     color: #fff;
-    font-family: sans-serif;
 }
 #footer #information-block #service-resources #yandex-rating #rating #target-rating {
     color: #888;
-    font-family: sans-serif;
 }
 #footer .vertical-line {
     border-left: 1px solid #555;
@@ -1115,7 +1081,6 @@ body {
     color: #ddd;
     text-decoration: none;
     font-size: 13px;
-    font-family: sans-serif;
 }
 #footer #copyright-block {
     margin: 0 50px;
@@ -1136,7 +1101,6 @@ body {
     text-align: right;
     margin: 10px 0 0 0;
     color: #ddd;
-    font-family: sans-serif;
     font-size: 14px;
 }
 #breadcrumbs .col-7 {
@@ -1189,7 +1153,6 @@ body {
 #pay-by-card #pay-with-sber #description .description-text, .description-sub-text {
     color: #555;
     font-size: 15px;
-    font-family: sans-serif;
 }
 #pay-by-card #pay-with-sber #description .description-sub-text {
     margin: 30px 0 0 0;
@@ -1207,14 +1170,12 @@ body {
 }
 #pay-by-card #delivery-process #delivery-process-description .description-text {
     color: #555;
-    font-family: sans-serif;
 }
 #pay-by-card #delivery-process #data {
     margin: 15px 0 0 0;
 }
 #pay-by-card #delivery-process #data .data-description, .data-sub-description {
     font-size: 16px;
-    font-family: sans-serif;
     color: #555;
     margin: 10px 0 0 0;
 }
@@ -1230,7 +1191,6 @@ body {
     padding: 15px 80px;
     color: #fff;
     font-size: 17px;
-    font-family: sans-serif;
     border: none;
     border-radius: 3%;
     background-color: #13a024;
@@ -1261,12 +1221,10 @@ body {
 #delivery #registration #title {
     color: #333;
     font-size: 21px;
-    font-family: sans-serif;
     font-weight: bold;
     margin: 30px 0;
 }
 #delivery #registration #registration-list {
-    font-family: sans-serif;
     font-size: 15px;
     color: #333;
 }
@@ -1292,7 +1250,6 @@ body {
     margin: 10px 0;
     display: flex;
     color: #333;
-    font-family: sans-serif;
 }
 #delivery #ways-of-payment-deliver #list .col-2 img {
     margin: 0 5px;
@@ -1304,7 +1261,6 @@ body {
     margin: 30px 0;
 }
 #delivery #pluses #pluses-title {
-    font-family: sans-serif;
     font-weight: bold;
     font-size: 19px;
     color: #333;
@@ -1322,7 +1278,6 @@ body {
     font-size: 35px;
 }
 #delivery #pluses #advantages .title {
-    font-family: sans-serif;
     font-size: 16px;
     font-weight: bold;
     margin: 10px 0 5px 0;
@@ -1330,7 +1285,6 @@ body {
 }
 #delivery #pluses #advantages .description {
     font-size: 16px;
-    font-family: sans-serif;
     color: #444;
 }
 #delivery #pluses #advantages #filled {
@@ -1345,13 +1299,11 @@ body {
 }
 #about-preview .col-12 .preview-text {
     font-size: 40px;
-    font-family: sans-serif;
     color: #444;
 }
 #sub-about-preview .col-12 {
     margin: 0 0 30px 0;
     font-size: 15px;
-    font-family: sans-serif;
     color: #333;
 }
 #about #wrapper {
@@ -1365,7 +1317,6 @@ body {
 }
 #about #wrapper #title .title-text {
     font-size: 25px;
-    font-family: sans-serif;
     color: #333;
 }
 #about #wrapper #service-description {
@@ -1375,7 +1326,6 @@ body {
 #about #wrapper #service-description #service-description-title .title-text {
     font-size: 22px;
     font-weight: bold;
-    font-family: sans-serif;
     color: #333;
     margin: 15px 0 0 0;
 }
@@ -1387,7 +1337,6 @@ body {
 }
 #about #wrapper #service-description #service-description-list li .list-item {
     color: #555;
-    font-family: sans-serif;
     font-size: 15px;
 }
 #about #wrapper #quantity #years, #repairs {
@@ -1407,7 +1356,6 @@ body {
 }
 #about #wrapper #quantity .description {
     margin: 0 0 45px 0;
-    font-family: sans-serif;
     font-size: 13px;
     color: #777
 }
@@ -1455,7 +1403,6 @@ body {
 #repair-preview #wrapper #left-side #breadcrumbs {
     margin: 0 0 30px 0;
     font-size: 15px;
-    font-family: sans-serif;
     color: #ddd;
 }
 #repair-preview #wrapper #left-side #breadcrumbs .hoverable {
@@ -1471,7 +1418,6 @@ body {
 #repair-preview #wrapper #left-side #description .description-text {
     font-size: 18px;
     font-weight: bold;
-    font-family: sans-serif;
     color: #fff;
     text-align: left;
 }
@@ -1481,13 +1427,11 @@ body {
 #repair-preview #wrapper #left-side #callback span {
     color: #fff;
     font-size: 19px;
-    font-family: sans-serif;
     margin: 0 30px 0 0;
 }
 #repair-preview #wrapper #left-side #callback button {
     color: #fff;
     font-size: 14px;
-    font-family: sans-serif;
     margin: 0 30px 0 0;
     border: 1px solid #ddd;
     border-radius: 4%;
@@ -1563,7 +1507,6 @@ body {
 #repair-price-table #service-table-header #table-header-item {
     background-color: #5b6472;
     color: #fff;
-    font-family: sans-serif;
     font-size: 16px;
     text-align: left;
     display: flex;
@@ -1574,7 +1517,6 @@ body {
 }
 #repair-price-table #service-table-body #table-body-item {
     color: #333;
-    font-family: sans-serif;
     font-size: 16px;
     display: flex;
     background-color: #fff;
@@ -1624,7 +1566,6 @@ body {
     text-align: center;
     margin: 30px 0;
     color: #fff;
-    font-family: sans-serif;
     font-size: 14px;
 }
 #repair-price-table #promotion-cards #image {
@@ -1642,7 +1583,6 @@ body {
 #repair-price-table #promotion-cards #description .description-text {
     text-align: center;
     font-size: 17px;
-    font-family: sans-serif;
     color: #fff;
     margin: 20px 0;
 }
@@ -1692,12 +1632,10 @@ body {
 #repair-description #wrapper #preview-text {
     color: #333;
     font-size: 15px;
-    font-family: sans-serif;
 }
 #repair-description #wrapper #about-service-description #title .title-text {
     margin: 25px 0;
     font-size: 19px;
-    font-family: sans-serif;
     font-weight: bold;
 }
 #repair-description #wrapper #about-service-description #list {
@@ -1776,7 +1714,6 @@ body {
 }
 #accordion #wrapper #accordion-text .title-text {
     font-size: 16px;
-    font-family: sans-serif;
     color: #333;
     margin: 5px 0 0 0;
 }
@@ -1790,7 +1727,6 @@ body {
     margin: 0 10px 0 10px;
 }
 #accordion #wrapper #accordion-item .collapsible-block {
-    font-family: sans-serif;
     font-size: 15px;
     color: #777;
     display: none;
@@ -1807,7 +1743,6 @@ body {
 }
 #repair-brand-description #list .title {
     font-size: 19px;
-    font-family: sans-serif;
     font-weight: bold;
     margin: 10px 0 15px 0;
 }
@@ -1818,7 +1753,6 @@ body {
 #repair-brand-description #list .sub-title {
     font-size: 13px;
     font-weight: bold;
-    font-family: sans-serif;
     margin: 0 0 10px 0;
 }
 #repair-brand-description #list #list-items {
@@ -1852,11 +1786,9 @@ body {
 }
 #repair-device #wrapper #repair-description #description-text .title {
     margin: 5px 0 15px 0;
-    font-family: sans-serif;
     font-size: 20px;
 }
 #repair-device #wrapper #repair-description #description-text .description {
-    font-family: sans-serif;
     font-size: 15px;
     font-weight: 500;
 }
@@ -1885,14 +1817,12 @@ body {
 }
 #repair-device #wrapper #repair-description #cards .card .description {
     font-size: 10px;
-    font-family: sans-serif;
     text-align: center;
     color: #ddd;
 }
 #repair-device #wrapper #repair-description #cards .card .bolded {
     text-align: center;
     font-size: 10px;
-    font-family: sans-serif;
     color: #ddd;
     margin: 5px 0 0 0;
 }
@@ -1940,7 +1870,6 @@ body {
     color: #fff;
     padding: 10px 0;
     font-size: 14px;
-    font-family: sans-serif;
     border-radius: 3%;
     cursor: pointer;
 } 
@@ -1966,13 +1895,11 @@ body {
     margin: 20px 0 0 20px;
 }
 #repair-device-benefits #wrapper #benefit .title {
-    font-family: sans-serif;
     margin: 0 0 10px 0;
 }
 #repair-device-benefits #wrapper #benefit #benefits-list {
     list-style: none;
     font-size: 12px;
-    font-family: sans-serif;
 }
 #devices #wrapper {
     display: flex;
@@ -1991,11 +1918,9 @@ body {
 #repair-device-description #wrapper #title-text {
     margin: 10px 0 20px 0;
     font-size: 15px;
-    font-family: sans-serif;
 }
 #repair-device-description #wrapper #repair-description .title {
     margin: 15px 0;
-    font-family: sans-serif;
     font-weight: bold;
     font-size: 18px;
 }

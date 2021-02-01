@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title ?></title>
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="/js/owlcarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="/js/owlcarousel/dist/assets/owl.theme.default.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
