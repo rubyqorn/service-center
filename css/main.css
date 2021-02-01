@@ -1,0 +1,2010 @@
+/* white - ECEDEB, brown - BAA24E, blue - 8AD1CE, grey - 8B868A, dark -545459 */
+:root {
+    --tl-white: #ffffff;
+    --tl-dark-blue: #4B4E6D;
+    --tl-blue: #84DCC6;
+    --tl-dark-gey: #95A3B3;
+    --tl-grey: #cecece;
+    --tl-dark: #222222;
+}
+body {
+    background-color: #eff1f1;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.navbar-links-list .vertical-line {
+    border-left: 1px solid var(--tl-grey);
+    margin: 0 20px;
+}
+/* navbar */
+.navbar-links-list {
+    background-color: var(--tl-white);
+}
+.navbar-links-list .container {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+}
+.navbar-links-list .links-list {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+}
+.navbar-links-list .links-list .list-link {
+    margin: 10px 0 15px 0;
+}
+.navbar-links-list .links-list .list-link a {
+    color: #555;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.navbar-links-list .links-list .list-link a:hover {
+    color: #1eb9ec;
+    transition: all 0.6s;
+}
+/* header */
+.service-info {
+    background-color: var(--tl-white);
+    padding: 10px 0;
+}
+.service-info .wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 10px 0;
+}
+.service-info .wrapper .vertical-line {
+    border-left: 1px solid #ddd;
+    margin: 0 0 0 50px;
+    text-align: right;
+}
+.service-info .wrapper .left-side, .right-side {
+    display: flex;
+}
+.service-info .wrapper .left-side .col-6 {
+    display: flex;
+}
+.service-info .wrapper .left-side .logo {
+    color: #333;
+    font-size: 14px;
+}
+.service-info .wrapper .left-side .logo a {
+    margin: 0 7px 0 0;
+    
+}
+.service-info .wrapper .left-side .address i {
+    color: #1eb9ec;
+    margin: 3px 7px 0 0;
+}
+.service-info .wrapper .left-side .address span, p {
+    color: #333;
+    font-size: 15px;
+}
+.service-info .wrapper .right-side .feedback {
+    text-align: right;
+}
+.service-info .wrapper .right-side .feedback .btn-call {
+    height: 42px;
+    width: 60%;
+    background-color: #3582d1;
+    box-shadow: 0 3px 13px rgb(0 54 105 / 18%);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 2%;
+    cursor: pointer;
+}
+.service-info .wrapper .right-side .feedback .btn-call:hover {
+    transition: all 0.5;
+    opacity: 0.8;
+}
+.service-info .wrapper .right-side .schedule {
+    color: #333;
+    text-align: right;
+}
+.service-info .wrapper .right-side .schedule .phone-service-number  {
+    color: #333;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* modal window with request form */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+}
+.modal-content {
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2b6fc2 74%);
+    box-shadow: 0 4px 28px rgb(0 44 102 / 31%);
+    margin: 5% auto;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+.modal-content #form-title, #form {
+    text-align: center;
+    margin: 30px 0 0 50px;
+}
+.modal-content #form-title .title-text {
+    margin: 30px 0 20px 0;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+.modal-content #form-title .preview-text {
+    color: rgb(204, 201, 201);
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+.modal-content #form {
+    padding: 0 0 15px 0;
+}
+.modal-content #form .field {
+    width: 87%;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5%;
+    margin: 8px 0;
+    padding: 5%;
+}
+.modal-content #form #phone {
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid rgb(202, 197, 197);
+}
+.modal-content #form .send-btn {
+    width: 100%;
+    border: none;
+    border-radius: 3%;
+    background-color: #fff;
+    color: #1eb9ec;
+    padding: 5%;
+    margin: 15px 0 0 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.modal-content #form #privacy-policy {
+    display: flex;
+    margin: 15px 0 0 0;
+}
+.modal-content #form #privacy-policy input {
+    height: 15px;
+    width: 15px;
+    appearance: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.modal-content #form #privacy-policy span {
+    text-align: left;
+    margin: 0 0 0 6px;
+    color: #ddd;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.modal-content #form .privacy-policy input:checked {
+    border: 1px solid #ddd;
+}
+.close {
+    color: #ddd;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* repair links */
+#repair-navbar {
+    background-color: #fff;
+    padding: 0 0 7px 0;
+}
+.repair-navbar .repair-link {
+    display: flex;
+    margin: 0 0 0 10px;
+}
+.repair-navbar .repair-link i {
+    margin: 18px 15px 0 0;
+    color: #d2d2d2;
+}
+.repair-navbar .repair-link .menu-item {
+    display: flex;
+    padding: 5px 0 0 0;
+} 
+.repair-navbar .repair-link .repair-title {
+    color: #333;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.repair-navbar .repair-link .repair-title span {
+    font-size: 12px;
+}
+.repair-navbar .repair-link .repair-title p {
+    font-size: 14px;
+}
+.header .preview-text {
+    margin: 0 0 0 0;
+    font-size: 26px;
+    text-align: left;
+}
+/* preview section */
+#preview {
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2b6fc2 74%);
+    height: 360px;
+}
+#preview #banner {
+    margin: 15px 0 0 0;
+}
+#preview .container #preview-text {
+    padding-top: 70px;
+}
+#preview .container #preview-text .service {
+    color: #e0dede;
+    font-size: 18px;
+}
+#preview .container #preview-text .service-location {
+    color: #fff;
+    font-size: 50px;
+    margin: 5px 0;
+}
+#preview .container #preview-text .service-description {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+/* benefits section */
+#benefits .col-12 {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 30px 10px 0 0;
+    padding: 3%;
+    border-radius: 10px;
+}
+.benefit-item {
+    padding: 1%;
+    margin: 0 5px;
+}
+.benefit-item .benefit-title {
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 10px 0;
+}
+.benefit-item .benefit-title i {
+    color: #1eb9ec;
+    margin: 0 5px 0 0;
+}
+.benefit-item .benefit-title .text {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.benefit-item .benefits-list {
+    border-right: 1px solid #ddd;
+    margin-top: 10px;
+}
+.benefit-item .benefits-list .benefits-list-item {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 4px 0 0 0;
+    color: #333;
+} 
+/* devices section */
+#devices-preview .preview-text {
+    text-align: left;
+    font-size: 26px;
+    margin: 30px 0 0 0;
+}
+#devices .col-12 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#devices #device-selection {
+    margin: 10px 10px 0 0;
+    width: 252px;
+    background-color: #fff;
+    padding: 1%;
+    border-radius: 3%;
+    text-decoration: none;
+    color: #000;
+}
+#devices #device-selection:hover {
+    box-shadow: 0 3px 13px rgb(0 54 105 / 18%);
+    transition: 0.6s;
+}
+#devices #device-selection .col-12 .title {
+    margin: 15px 0 0 0;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#devices #device-selection #image {
+    margin: 40px 0;
+}
+#devices #device-selection #image .image {
+    position: absolute;
+}
+#devices #device-selection #image {
+    justify-content: center;
+}
+#devices .col-12 #device-selection #image .circle-bg {
+    padding: 18%;
+    width: 2%;
+    height: 5px;
+    background-color: #a3e0f5;
+    border-radius: 200px;
+}
+#devices #device-selection #device-info {
+    margin: 5px 0 15px 0;
+}
+#devices #device-selection #device-info #get-more-info button {
+    background: #29c9a1;
+    box-shadow: 0 3px 13px rgb(0 54 105 / 18%);
+    color: #fff;
+    display: inline-block;
+    border-radius: 100px;
+    border: none;
+    padding: 7px 19px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+}
+#devices #device-selection #device-info #get-more-info button:hover {
+    background-color: #57ceb0;
+    transition: all 0.6s;
+}
+#devices #device-selection #device-info #price {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 7px 0 0 0;
+    text-align: left;
+}
+/* brand selection */
+#brands-preview .col-12 {
+    text-align: left;
+    font-size: 26px;
+    margin: 30px 0 0 0;
+}
+#brands .col-12 {
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+#brands #brands-selection {
+    width: 90px;
+    padding: 5px 6px;
+    margin: 10px 6px 0 6px;
+    background-color: #fff;
+    border-radius: 3%;
+    text-decoration: none;
+}
+#brands #brands-selection:hover {
+    box-shadow: 0 3px 13px rgb(0 54 105 / 18%);
+    transition: 0.6s;
+}
+#brands #brands-selection .container {
+    justify-content: center;
+}
+#brands #brands-selection .container span {
+    font-size: 8px;
+    font-family: sans-serif;
+    color: #333;
+    margin: 5px 0;
+}
+#brands #brands-selection .container i {
+    font-size: 40px;
+    color: rgb(60 116 193);
+    margin: 0 0 5px 0;
+}
+/* callback form */
+#callback-form .col-12 {
+    background: url("/img/request.png");
+    background-color: rgb(42 171 172);
+    height: 223px;
+    border-radius: 10px;
+    display: flex;
+    margin: 35px 6px 0 6px;
+}
+#callback-form .col-12 #form {
+    text-align: left;
+    padding: 20px 0 0 0;
+}
+#callback-form .col-12 #form .form-title {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #fff;
+    margin: 0 5px;
+}
+#callback-form .col-12 .send-form {
+    display: flex;
+    margin: 10px 0;
+}
+#callback-form .col-12 .send-form .field {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5%;
+    margin: 0 10px;
+    padding: 2%;
+}
+#callback-form .col-12 .send-form .field input {
+    background: transparent;
+    border: none;
+}
+#callback-form .col-12 .send-form .field i {
+    color: #29c9a1;
+    margin: 0 15px 0 0;
+}
+#callback-form .col-12 .send-form button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #4b4b4b;
+    padding: 14px 19px;
+    background: #fff73f;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    transition-duration: .2s;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+#callback-form .col-12 .send-form button:hover {
+    background-color: #f3f353;
+    transition: all 0.6s;
+}
+#callback-form .col-12 .privacy-policy {
+    display: flex;
+    padding: 5px 10px;
+}
+#callback-form .col-12 .privacy-policy input {
+    height: 15px;
+    width: 15px;
+    appearance: none;
+    border: 1px solid yellow;
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+#callback-form .col-12 .privacy-policy input:checked {
+    border: 1px solid yellow;
+}
+#callback-form .col-12 .privacy-policy .privacy-policy-text {
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    color: #ffffffb3;
+}
+/* promotion slider */
+#promotion-preview #wrapper {
+    display: flex;
+}
+#promotion-preview #wrapper #title {
+    font-size: 26px;
+    margin: 30px 0 10px 0 ;
+}
+#promotion-preview #wrapper #navs {
+    margin: 30px 0 0 0;
+    text-align: right;
+}
+#promotion-preview #wrapper #navs i {
+    color: #3582d1;
+    border: 1px solid #3582d1;
+    border-radius: 20%;
+    padding: 5%;
+    margin: 0 5px 0 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+#promotion-preview #wrapper #navs i:hover {
+    transition: all 0.6s;
+    background-color: #3582d1;
+    color: #fff
+}
+#promotion-slider #wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+#promotion-slider .owl-item {
+    border-radius: 10px;
+}
+#promotion-slider .owl-item:hover {
+    transition: all 0.6s;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
+}
+#promotion-slider .owl-dots {
+    display: flex;
+    justify-content: center;
+}
+#promotion-slider .slide .title-text {
+    font-size: 12px;
+    color: #fff;
+    font-family: sans-serif;
+}
+#promotion-slider .title {
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 0 30px 0;
+    color: #fff;
+    font-family: sans-serif;
+}
+#promotion-slider .container {
+    margin: 0 0 30px 0;
+}
+#promotion-slider #image .image {
+    position: absolute;
+    margin-top: -85px;
+    margin-left: 10px;
+}
+#promotion-slider #not-absolute-image {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+#promotion-slider #text {
+    color: #fff;
+    font-family: sans-serif;
+}
+#promotion-slider #text p {
+    margin: 0 0 10px 0;
+}
+#promotion-slider .slide {
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 10px 20px rgb(3 64 121 / 6%);
+    border-radius: 5px;
+    transition-duration: .2s; 
+}
+#promotion-slider .circle-bg {
+    padding: 5%;
+    margin: 0 0 0 30px;
+    width: 40%;
+    height: 60px;
+    border-radius: 200px;
+}
+#promotion-slider #glass {
+    background: #ed96a6;
+}
+#promotion-slider #glass .circle-bg {
+    background-color: #ca7081;
+}
+#promotion-slider  #promo-500 {
+    background: #97caff;
+}
+#promotion-slider  #promo-500 img {
+    width: 52%;
+}
+#promotion-slider  #two-and-more {
+    background: #f0d547;
+}
+#promotion-slider #two-and-more .circle-bg {
+    background-color: #cab445;
+}
+#promotion-slider #priveleged {
+    background: #97caff;
+}
+#promotion-slider #priveleged .circle-bg {
+    background-color: #5c8dc2;
+}
+#promotion-slider .owl-dot {
+    height: 5px;
+    width: 5px;
+    margin: 15px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+#promotion-slider .active {
+    background-color: #5c8dc2;
+}
+/* about service section */
+#about-service-preview .preview-text {
+    text-align: left;
+    font-size: 26px;
+    margin: 30px 0 0 0;
+}
+#about-service #wrapper {
+    padding: 30px 70px 35px 70px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 1%;
+}
+#about-service #wrapper #title .title-text {
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#about-service #wrapper #description {
+    margin: 20px 0 0 0;
+}
+#about-service #wrapper #description .description-list {
+    margin: 0 0 0 40px;
+}
+#about-service #wrapper #description .description-list .description-list-item {
+    margin: 5px 0;
+}
+/* repair process section */
+#repair-process-preview .preview-text {
+    text-align: left;
+    font-size: 26px;
+    margin: 20px 0 0 0;
+}
+#repair-process {
+    margin: 20px 0 0 0;
+}
+#repair-process #wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#repair-process #wrapper #process {
+    padding: 0 20px;
+    margin: 0 12px 0 0;
+    width: 140px;
+    background-color: #fff;
+    border-radius: 3%;
+}
+#repair-process #wrapper #process:hover {
+    transition: all 0.6s;
+    box-shadow: 0 4px 9px rgb(0 0 0 / 3%);
+}
+#repair-process #wrapper #process .process-number {
+    padding: 20px 0;
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+#repair-process #wrapper #process #process-image, #process-title, #process-description {
+    text-align: center;
+}
+#repair-process #wrapper #process #process-title .process-description-title {
+    color: #444;
+    margin: 10px 0;
+    font-family: sans-serif;
+    font-size: 15px
+}
+#repair-process #wrapper #process #process-description .process-description-text {
+    color: #222;
+    margin: 0 0 20px 0;
+    font-family: sans-serif;
+    font-size: 13px
+}
+/* user reviews section */
+#reviews-preview {
+    display: flex;
+    justify-content: center;
+}
+#reviews-preview #wrapper {
+    margin: 0 0 0 10px;
+    display: flex;
+}
+#reviews-preview #wrapper #title {
+    font-size: 26px;
+    margin: 30px 0 10px 0;
+}
+#reviews-preview #wrapper #slider-buttons {
+    text-align: right;
+    margin: 30px 0 0 20px;
+}
+#reviews-preview #wrapper #slider-buttons span {
+    color: #3582d1;
+    border: 1px solid #3582d1;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 0 10px 0 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+#reviews-preview #wrapper #slider-buttons span:hover {
+    transition: all 0.6s;
+    background-color: #3582d1;
+    color: #fff;
+}
+#reviews #reviews-slider {
+    background-color: #fff;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px 0;
+}
+#reviews #reviews-slider #review-item {
+    margin: 10px 0;
+}
+#reviews #review-item #review-title {
+    display: flex;
+}
+#reviews #review-item #resource-google {
+    color: #3582d1;
+    margin: 0 10px 0 0;
+}
+#reviews #review-item #resource-google i {
+    border: 1px solid #ddd;
+    border-radius: 40%;
+    padding: 5px 5px;
+}
+#reviews #review-item #resource-yandex {
+    color: #ee4e4e;
+    margin: 0 10px 0 0;
+}
+#reviews #review-item #resource-yandex i {
+    border: 1px solid #ddd;
+    border-radius: 40%;
+    padding: 5px 7px;
+}
+#reviews #review-item #reviewer-info #stars {
+    color: #f1a71c;
+    font-size: 10px;
+    margin: 0 0 5px 0;
+}
+#reviews #review-item #reviewer-info #stars i {
+    margin: 0 0 0 5px;
+    text-align: left;
+}
+#reviews #review-item #reviewer-info #name {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: #333;
+    margin: 0 0 0 7px;
+}
+#reviews #review-item #review-content {
+    margin: 20px 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #444;
+}
+#reviews .hidden-slide {
+    display: none;
+}
+#reviews-footer .col-12 {
+    padding: 20px 30px;
+    margin: 0 4px 0 0;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2b6fc2 74%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+}
+#reviews-footer #footer-text .title {
+    font-size: 22.5px;
+    color: #fff;
+}
+#reviews-footer #footer-text .description {
+    color: #ddd;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+}
+#reviews-footer #social-links {
+    text-align: right;
+    margin: 15px 0 0 0;
+}
+#reviews-footer #social-links .leave-review {
+    text-decoration: none;
+    padding: 4%;
+    margin: 0 0 0 20px;
+    border-radius: 3%;
+    background-color: #fff73f;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+#reviews-footer #social-links .leave-review:hover {
+    transition: all 0.6s;
+    background-color: #f1eb66;
+}
+#reviews-footer #social-links i {
+    padding: 7px 7px;
+    background-color: #e1e4e9;
+    margin: 3px 7px 0 7px;
+    vertical-align: center;
+    border-radius: 10%;
+    color: #3a90d9;
+    font-size: 19px;
+}
+/* contacts section */
+#service-contacts-preview .preview-text {
+    text-align: left;
+    font-size: 26px;
+    margin: 30px 0 10px 0;
+}
+#service-contacts #wrapper {
+    margin: 10px 0 0 0;
+    display: flex;
+}
+#service-contacts #wrapper #service-contacts-info {
+    padding: 2%;
+    margin: 0 0 0 30px;
+    background-color: #fff;
+    border-radius: 2%;
+}
+#service-contacts #service-contacts-info #contacts-title {
+    display: flex;
+}
+#service-contacts #service-contacts-info #contacts-title #logo {
+    display: flex;
+}
+#service-contacts #service-contacts-info #contacts-title #logo .title {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #333;
+}
+#service-contacts #service-contacts-info #contacts-title #logo .description {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #666;
+    margin: 3px 0 0 0;
+}
+#service-contacts #service-contacts-info #contacts-title #cards i {
+    font-size: 30px;
+    color: #ddd;
+    text-align: right;
+    margin: 0 5px;
+}
+#service-contacts #service-contacts-info #contacts-info {
+    display: flex;
+    margin: 25px 0 0 0;
+}
+#service-contacts #service-contacts-info #contacts-info .title i {
+    margin: 0 7px 0 0;
+    color: #3582d1;
+    font-size: 12px; 
+}
+#service-contacts #service-contacts-info #contacts-info .title {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#service-contacts #service-contacts-info #contacts-info #phones .phones {
+    margin: 13px 0 0 0;
+}
+#service-contacts #service-contacts-info #contacts-info #phones .phones .phone a {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: #333;
+}
+#service-contacts #service-contacts-info #contacts-info #address {
+    margin: 26px 0 0 0;
+}
+#service-contacts #service-contacts-info #contacts-info #address .address-text {
+    font-size: 12px;
+    margin: 7px 0 0 0;
+    max-width: 200px;
+}
+#service-contacts #service-contacts-info #contacts-info #schedule {
+    margin: 26px 0 0 0; 
+}
+#service-contacts #service-contacts-info #contacts-info #schedule .description {
+    margin: 7px 0 0 0;
+}
+#service-contacts #service-contacts-info #contacts-info #schedule .schedule-text {
+    font-size: 12px;
+}
+#service-contacts #service-contacts-info #contacts-info #email {
+    margin: 26px 0 0 0; 
+}
+#service-contacts #service-contacts-info #contacts-info #email .description {
+    margin: 7px 0 0 0;
+}
+#service-contacts #service-contacts-info #contacts-info #email .email-text {
+    font-size: 12px;
+}
+#service-contacts #service-contacts-info #contacts-info #metro .title {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#service-contacts #service-contacts-info #contacts-info #metro .metro-service-range i {
+    color: #df4040;
+    margin: 12px 10px 12px 0;
+} 
+#service-contacts #service-contacts-info #contacts-info #metro .metro-service-range span {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+#service-contacts #service-contacts-info #contacts-info #metro #index-train {
+    margin: 7px 0 0 0;
+    font-size: 14px;
+    color: #000;
+    max-width: 240px;
+}
+#service-contacts #service-contacts-info #contacts-info #stations {
+    margin: 15px 0 0 0;
+}
+#service-contacts #service-contacts-info #contacts-info #stations .title {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#service-contacts #service-contacts-info #contacts-info #stations .station-name i {
+    font-size: 15px;
+    margin: 12px 7px 0 0;
+}
+#service-contacts #service-contacts-info #contacts-info #stations .station-name span {
+    font-size: 14px;
+}
+/* gallery section */
+#service-gallery {
+    margin: 30px 0 0 0;
+}
+#service-gallery #wrapper {
+    background-color: #fff;
+    padding: 30px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+#service-gallery #wrapper #image {
+    display: flex;
+    justify-content: center; 
+}
+#service-gallery #wrapper #image img {
+    width: 75%;
+}
+/* footer section */
+#footer {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0 0 0;
+    background-color: #222222;
+}
+#footer #wrapper {
+    margin: 0 20px;
+    padding: 30px 30px;
+}
+#footer #information-block #service-resources, #service-socials {
+    display: flex;
+}
+#footer #fast-access-links {
+    display: flex;
+}
+#footer #copyright-block {
+    display: flex;
+}
+#footer #information-block #service-resources #logo {
+    display: flex;
+    margin: 0 0 15px 0;
+}
+#footer #information-block #service-resources {
+    border-bottom: 1px solid #555;
+}
+#footer #information-block #service-resources #logo .logo-text {
+    margin: 0 0 0 7px;
+    color: #fff;
+    font-family: sans-serif;
+}
+#footer #information-block #service-resources #logo .logo-text .title {
+    font-size: 15px;
+}
+#footer #information-block #service-resources #logo .logo-text .description {
+    font-size: 15px;
+    margin: 3px 0 0 0;
+    color: #fff;
+}
+#footer #information-block #service-resources #phones .phone a  {
+    margin: 0 10px 10px 20px;
+    color: #3a90d9;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+#footer #information-block #service-resources #yandex-rating {
+    margin: 0 0 0 30px;
+}
+#footer #information-block #service-resources #yandex-rating .col-12 {
+    display: flex;
+}
+#footer #information-block #service-resources #yandex-rating #rating i {
+    color: #ff0000;
+    font-size: 20px;
+    margin: 0 10px 0 0;
+}
+#footer #information-block #service-resources #yandex-rating #rating #real-rating {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    font-family: sans-serif;
+}
+#footer #information-block #service-resources #yandex-rating #rating #target-rating {
+    color: #888;
+    font-family: sans-serif;
+}
+#footer .vertical-line {
+    border-left: 1px solid #555;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#footer #information-block #service-resources #yandex-rating #leave-appraisal {
+    margin: 5px 0;
+}
+#footer #information-block #service-resources #yandex-rating #leave-appraisal .col-12 {
+    display: flex;
+    color: #888;
+}
+#footer #information-block #service-resources #yandex-rating #leave-appraisal .col-12 .col-3 {
+    font-size: 18px;
+    margin: 0 10px;
+}
+#footer #information-block #service-resources #yandex-rating #leave-appraisal .col-12 .col-4 {
+    font-size: 15px;
+}
+#footer #information-block #service-resources #yandex-rating #clarification .clarification-text {
+    font-size: 14px;
+    color: #888;
+    margin: 0 0 15px 0;
+}
+#footer #information-block #service-socials #address {
+    margin: 20px 0 0 0;
+    
+}
+#footer #information-block #service-socials #address .address-text {
+    color: #ddd;
+    font-size: 14px;
+}
+#footer #information-block #service-socials #ie-block {
+    margin: 20px 0 0 0;
+}
+#footer #information-block #service-socials #ie-block .ie-text {
+    color: #ddd;
+    font-size: 14px;
+}
+#footer #information-block #service-socials .col-4 {
+    margin: 0 5px;
+}
+#footer #information-block #service-socials #social-networks {
+    text-align: right;
+    margin: 25px 0 0 0;
+}
+#footer #information-block #service-socials #social-networks a {
+    text-decoration: none;
+    color: #888;
+}
+#footer #information-block #service-socials #social-networks i {
+    background-color: #ddd;
+    padding: 2%;
+    border-radius: 10%;
+    margin: 0 2px;
+}
+#footer #fast-access-links {
+    margin: 0 0 0 60px;
+    color: #ddd;
+}
+#footer #fast-access-links #devices #title {
+    display: flex;
+    justify-content: left;
+}
+#footer #fast-access-links #devices #title .title-text, #information #title .title-text {
+    color: #ddd;
+}
+#footer #fast-access-links .links-cols {
+    display: flex;
+    margin: 5px 0;
+}
+#footer #fast-access-links .link {
+    margin: 5px 0;
+}
+#footer #fast-access-links .link a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+#footer #copyright-block {
+    margin: 0 50px;
+}
+#footer #copyright-block .col-12 {
+    display: flex;
+    margin: 0 50px;
+    border-top: 1px solid #555;
+}
+#footer #copyright-block #cards {
+    margin: 10px 0;
+}
+#footer #copyright-block #cards i {
+   color: #888;
+   font-size: 27px;
+}
+#footer #copyright-block #copyright-text {
+    text-align: right;
+    margin: 10px 0 0 0;
+    color: #ddd;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+#breadcrumbs .col-7 {
+    margin: 30px 0 0 0;
+}
+#breadcrumbs .col-7 .breadcrumb-item {
+    color: #333;
+    text-decoration: none;
+}
+#breadcrumbs .col-7 .active-breadcrumb {
+    color: #777;
+}
+/* contacts page */
+#contacts-preview .preview-text {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px 0 0 0;
+}
+#path-video-guide .col-12 {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+/* pay by card page */
+#pay-by-card .col-11 {
+    background-color: #fff;
+    padding: 3%;
+    margin: 30px 0 0 0;
+    border-radius: 2%;
+}
+#pay-by-card #title {
+    margin: 30px 0 0 0; 
+}
+#pay-by-card #title .title-text {
+    font-size: 25px;
+    margin: 0 0 15px 0;
+}
+#pay-by-card #title .description-text {
+    font-size: 15px;
+    color: #555;
+    margin: 0 0 25px 0;
+}
+#pay-by-card #pay-with-sber {
+    display: flex;
+}
+#pay-by-card #pay-with-sber #description {
+    margin: 80px 0 0 15px;
+}
+#pay-by-card #pay-with-sber #description .description-text, .description-sub-text {
+    color: #555;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+#pay-by-card #pay-with-sber #description .description-sub-text {
+    margin: 30px 0 0 0;
+}
+#pay-by-card #pay-with-sber img {
+    width: 100%;
+}
+#pay-by-card #cards-list {
+    display:flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+#pay-by-card #delivery-process #delivery-process-description {
+    margin: 25px 0 0 0;
+}
+#pay-by-card #delivery-process #delivery-process-description .description-text {
+    color: #555;
+    font-family: sans-serif;
+}
+#pay-by-card #delivery-process #data {
+    margin: 15px 0 0 0;
+}
+#pay-by-card #delivery-process #data .data-description, .data-sub-description {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #555;
+    margin: 10px 0 0 0;
+}
+#pay-by-card #delivery-process #data .data-sub-description {
+    margin: 20px 0 0 0;
+}
+#pay-by-card #pay {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+#pay-by-card #pay .pay-btn {
+    padding: 15px 80px;
+    color: #fff;
+    font-size: 17px;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 3%;
+    background-color: #13a024;
+    cursor: pointer;
+}
+/* delivery page */
+#delivery .col-11 {
+    background-color: #fff;
+    border-radius: 2%;
+    padding: 2%;
+    margin: 30px 0;
+}
+#delivery .col-11 #wrapper {
+    display: flex;
+}
+#delivery #title {
+    margin: 30px 0 20px 0; 
+}
+#delivery #title .title-text {
+    font-size: 25px;
+    margin: 0 0 15px 0;
+}
+#delivery #title .description-text {
+    font-size: 15px;
+    color: #555;
+    margin: 0 0 25px 0;
+}
+#delivery #registration #title {
+    color: #333;
+    font-size: 21px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 30px 0;
+}
+#delivery #registration #registration-list {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #333;
+}
+#delivery #registration #registration-list .title {
+    margin: 25px 0;
+}
+#delivery #registration #registration-list #list {
+    margin: 0 0 0 50px;
+}
+#delivery #registration #registration-list #list li {
+    margin: 10px 0;
+}
+#delivery #ways-of-payment-deliver .ways-title {
+    margin: 20px 0 20px 30px;
+    color: #29c9a1;
+}
+#delivery #ways-of-payment-deliver #list {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 40px;
+}
+#delivery #ways-of-payment-deliver #list .col-2 {
+    margin: 10px 0;
+    display: flex;
+    color: #333;
+    font-family: sans-serif;
+}
+#delivery #ways-of-payment-deliver #list .col-2 img {
+    margin: 0 5px;
+}
+#delivery #ways-of-payment-deliver #deliver-types {
+    margin: 0 0 0 90px;
+}
+#delivery #pluses {
+    margin: 30px 0;
+}
+#delivery #pluses #pluses-title {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #333;
+    margin: 25px 0 0 0;
+}
+#delivery #pluses #advantages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#delivery #pluses #advantages .col-4 {
+    margin: 15px 0 0 0;
+}
+#delivery #pluses #advantages i {
+    font-size: 35px;
+}
+#delivery #pluses #advantages .title {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #333;
+}
+#delivery #pluses #advantages .description {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #444;
+}
+#delivery #pluses #advantages #filled {
+    padding: 3%;
+    border-radius: 3%;
+    background-color: #edf3fd;
+    margin: 0 0 10px 0;
+}
+/* about page */
+#about-preview .col-12 {
+    margin: 40px 0;
+}
+#about-preview .col-12 .preview-text {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #444;
+}
+#sub-about-preview .col-12 {
+    margin: 0 0 30px 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #333;
+}
+#about #wrapper {
+    padding: 3%;
+    background-color: #fff;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+#about #wrapper #title {
+    margin: 30px 0 0 0;
+}
+#about #wrapper #title .title-text {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #333;
+}
+#about #wrapper #service-description {
+    margin: 30px 0 0 0;
+    display: flex;
+}
+#about #wrapper #service-description #service-description-title .title-text {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #333;
+    margin: 15px 0 0 0;
+}
+#about #wrapper #service-description #service-description-list {
+    margin: 25px 0 25px 35px;
+}
+#about #wrapper #service-description #service-description-list li {
+    margin: 11px 0 0 0;
+}
+#about #wrapper #service-description #service-description-list li .list-item {
+    color: #555;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#about #wrapper #quantity #years, #repairs {
+    padding-top: 15px;
+    border-top: 3px solid #29c9a1;
+}
+#about #wrapper #quantity .title {
+    color: #29c9a1;
+    margin: 0 0 15px 0;
+}
+#about #wrapper #quantity .quantity {
+    color: #555;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 55px;
+    margin: 0 0 15px 0;
+}
+#about #wrapper #quantity .description {
+    margin: 0 0 45px 0;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #777
+}
+#about #wrapper #quote {
+    margin: 15px 0 0 0;
+}
+#about #wrapper #quote #border {
+    border:1px solid #29c9a1; 
+    margin: 0 0 15px 0;
+}
+#about #wrapper #quote #quote-text .quote-text {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    color: #444;
+}
+#about #wrapper #quote #quote-text {
+    display: flex;
+}
+#about #wrapper #quote #quote-text #quote-image {
+    margin: -30px 0 0 10px;
+}
+#about #wrapper .about-benefits-block {
+    border-top: 1px solid #ddd;
+}
+#about-benefits-block {
+    margin: 20px 0 0 0;
+    border-top: 1px solid #ddd; 
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 2%;
+}
+#about-benefits-block .col-12 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+/* repair pages(main repair, by brand, by device) */
+#repair-preview {
+    background: linear-gradient(110.6deg,#0042a6 7.28%,#3582d1 68.8%,#09219d 107.06%);
+    height: 500px;
+}
+#repair-preview #wrapper #left-side {
+    margin: 30px 120px 0 0px;
+}
+#repair-preview #wrapper #left-side #breadcrumbs {
+    margin: 0 0 30px 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #ddd;
+}
+#repair-preview #wrapper #left-side #breadcrumbs .hoverable {
+    text-decoration: none;
+    color: #ddd;
+}
+#repair-preview #wrapper #left-side #title .title-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 30px 0;
+}
+#repair-preview #wrapper #left-side #description .description-text {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: left;
+}
+#repair-preview #wrapper #left-side #callback {
+    margin: 30px 15px 0 15px;
+}
+#repair-preview #wrapper #left-side #callback span {
+    color: #fff;
+    font-size: 19px;
+    font-family: sans-serif;
+    margin: 0 30px 0 0;
+}
+#repair-preview #wrapper #left-side #callback button {
+    color: #fff;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin: 0 30px 0 0;
+    border: 1px solid #ddd;
+    border-radius: 4%;
+    background-color: transparent;
+    padding: 18px 18px;
+    cursor: pointer;
+}
+#repair-preview #wrapper #left-side #callback button:hover {
+    transition: all 0.5s;
+    background-color: #66a0e7;
+    color: #fff;
+}
+#repair-preview #wrapper #right-side {
+    margin: 70px 0 0 0;
+}
+#repair-preview #wrapper #right-side #find-device {
+    float: right;
+    margin: 0 50px 0 0;
+}
+#repair-preview #wrapper #right-side #find-device .find-device-form {
+    padding: 5%;
+    background-color: #fff;
+    border-radius: 6%;
+    border-radius: 10px;
+}
+#repair-preview #wrapper #right-side #find-device input {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+#repair-preview #wrapper #right-side #find-device button {
+    position: absolute;
+    padding: 8px 8px 8px 8px;
+    margin: -10px 0 0 1px;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #1eb9ec;
+    background-color: #1eb9ec;
+    border-radius: 10px;
+}
+#repair-benefits {
+    position: absolute;
+    margin: 400px 0 0 115px;
+}
+#repair-benefits .col-12 {
+    width: 1140px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 30px 10px 0 0;
+    padding: 3%;
+    border-radius: 10px;
+}
+/* when block was hoverable by position absolute style */
+.mr-for-hoverable {
+    padding: 120px 0 0 0;
+}
+#repair-price-list-preview .col-12 {
+    margin: 35px 0 10px 0;
+}
+#repair-price-list-preview .preview-text {
+    text-align: left;
+    font-size: 26px;
+    margin: 0 10px 0 0;
+}
+#repair-price-list-preview .hint {
+    font-size: 20px;
+    color: #555;
+}
+#repair-price-table #wrapper {
+    display: flex;
+}
+#repair-price-table #service-table-header #table-header-item {
+    background-color: #5b6472;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: left;
+    display: flex;
+    padding: 2%;
+    margin: 5px 0 0 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px rgb(0 0 0 / 3%);
+}
+#repair-price-table #service-table-body #table-body-item {
+    color: #333;
+    font-family: sans-serif;
+    font-size: 16px;
+    display: flex;
+    background-color: #fff;
+    padding: 2%;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 4px 5px rgb(0 0 0 / 3%);
+    margin: 7px 0 0 0;
+}
+#repair-price-table #service-table-body #table-body-item #price {
+    font-weight: bold;
+}
+#repair-price-table #service-table-body #table-body-item .register-delivery {
+    border: 1px solid #1eb9ec;
+    color: #1eb9ec;
+    padding: 10px 0;
+    cursor: pointer;
+    width: 90%;
+    margin: 0 0 0 25px;
+    background-color: transparent;
+}
+#repair-price-table #service-table-body #table-body-item .register-delivery:hover {
+    transition: all 0.5s;
+    background-color: #3582d1;
+    color: #fff;
+}
+#repair-price-table #promotion-cards {
+    margin: 25px 0 0 45px;
+}
+#repair-price-table #promotion-cards .col-12 {
+    margin: 10px 0;
+    padding: 1%;
+    border-radius: 2%;
+    cursor: pointer;
+}
+#repair-price-table #promotion-cards .card:hover {
+    box-shadow: 0 3px 5px rgb(0 54 105 / 18%);
+    transition: 0.6s;
+}
+#repair-price-table #promotion-cards .circle-bg {
+    padding: 5%;
+    width: 25%;
+    height: 60px;
+    border-radius: 200px;
+}
+#repair-price-table #promotion-cards #title .title-text {
+    text-align: center;
+    margin: 30px 0;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+#repair-price-table #promotion-cards #image {
+    display: flex;
+    justify-content: center;
+}
+#repair-price-table #promotion-cards #image img {
+    position: absolute;
+    margin: -10px 0 0 0;
+}
+#repair-price-table #promotion-cards #not-absolute-image {
+    display: flex;
+    justify-content: center;
+}
+#repair-price-table #promotion-cards #description .description-text {
+    text-align: center;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: #fff;
+    margin: 20px 0;
+}
+#repair-price-table #promotion-cards #description .description-sub-text {
+    margin: 17px 0 0 0;
+    color: #fff;
+    text-align: center;
+}
+#repair-price-table #promotion-cards #defend-glass {
+    background-color: #ed96a6;
+}
+#repair-price-table #promotion-cards #defend-glass .circle-bg {
+    background-color: #d6576e;
+}
+#repair-price-table #promotion-cards #promo-500 {
+    background-color: #97caff;
+}
+#repair-price-table #promotion-cards #two-or-more-10 {
+    background-color: #f0d547;
+}
+#repair-price-table #promotion-cards #two-or-more-10 .circle-bg {
+    background-color: #cab64e;
+}
+#repair-price-table #promotion-cards #priveleged-groups {
+    background-color: #97caff;
+}
+#repair-price-table #promotion-cards #priveleged-groups .circle-bg {
+    background-color: #5484b8;
+}
+#repair-price-table #promotion-cards #two-or-more-5 {
+    background-color: #ed96a6;
+}
+#repair-price-table #promotion-cards #two-or-more-5 .circle-bg {
+    background-color: #d6576e;
+}
+#repair-price-table #promotion-cards #happy-hours {
+    background-color: #c0b9eb;
+}
+#repair-price-table #promotion-cards #happy-hours .circle-bg {
+    background-color: #9188cc;
+}
+#repair-description #wrapper {
+    background-color: #fff;
+    border-radius: 2%;
+    padding: 4%;
+}
+#repair-description #wrapper #preview-text {
+    color: #333;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+#repair-description #wrapper #about-service-description #title .title-text {
+    margin: 25px 0;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#repair-description #wrapper #about-service-description #list {
+    margin: 0 0 0 30px;
+}
+#repair-description #wrapper  #about-service-text {
+    margin: 15px 0 0 0;
+    color: #222;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+}
+#repair-model-selection-preview .preview-text {
+    text-align: left;
+    font-size: 26px;
+}
+#repair-model-selection #wrapper {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+#repair-model-selection #wrapper #device {
+    display: flex;
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 4%;
+    margin: 13px 30px 0 0;
+    width: 209px;
+    box-shadow: 0 3px 5px rgb(0 54 105 / 18%);
+    text-decoration: none;
+    font-size: 16px;
+}
+#repair-model-selection #wrapper #device:hover {
+    box-shadow: 0 3px 20px rgb(0 54 105 / 18%);
+    transition: all 0.6s;
+}
+#repair-model-selection #wrapper #device .circle-bg {
+    padding: 5%;
+    width: 90%;
+    height: 65px;
+    border-radius: 200px;
+    background-color: #8fbece;
+}
+#repair-model-selection #wrapper #device #image img {
+    position: absolute;
+    margin: -72px 0 0 12px;
+}
+#repair-model-selection #wrapper #device #name {
+    margin: 16px 0 0 10px;
+    color: #333;
+}
+#accordion-preview-text .preview-text {
+    margin: 30px 0 0 0;
+    font-size: 26px;
+    text-align: left;
+}
+#accordion #wrapper {
+    background-color: #fff;
+    padding: 5%;
+    border-radius: 4%;
+    margin: 20px 0 0 0;
+    display: flex;
+}
+#accordion #wrapper #accordion-block {
+    padding: 0 16px 0 0;
+}
+#accordion #wrapper #accordion-item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
+    margin: 15px 0 0 0;
+}
+#accordion #wrapper #accordion-text {
+    display: flex;
+    margin: 0 0 15px 0;
+}
+#accordion #wrapper #accordion-text .title-text {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #333;
+    margin: 5px 0 0 0;
+}
+#accordion #wrapper #accordion-text #accordion-btn i {
+    padding: 5px 6px;
+    background-color: #49a1f3;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8%;
+    font-size: 12px;
+    margin: 0 10px 0 10px;
+}
+#accordion #wrapper #accordion-item .collapsible-block {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #777;
+    display: none;
+}
+#repair-brand-description #wrapper {
+    margin: 25px 0 0 0;
+    background-color: #fff;
+    padding: 3%;
+    border-radius: 2%;
+}
+#repair-brand-description #title .title-text {
+    margin: 15px 0 15px 0;
+    color: #333;
+}
+#repair-brand-description #list .title {
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 10px 0 15px 0;
+}
+#repair-brand-description #list .sub-text {
+    margin: 15px 0 15px 0;
+    color: #333;
+}
+#repair-brand-description #list .sub-title {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 0 0 10px 0;
+}
+#repair-brand-description #list #list-items {
+    margin: 0 0 0 40px;
+    color: #333;
+}
+#repair-brand-description #repair-description {
+    color: #222;
+    font-weight: bold;
+    font-size: 14px;
+    font-style: italic;
+}
+#repair-device #wrapper {
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 3%;
+    margin: 25px 0 0 0;
+}
+#repair-device #wrapper #description #image img {
+    position: absolute;
+    margin: 0 0 0 45px;
+}
+#repair-device #wrapper #repair-description {
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+#repair-device #wrapper #repair-description #description-text {
+    margin: 0 30px 0 0;
+}
+#repair-device #wrapper #repair-description #description-text .title {
+    margin: 5px 0 15px 0;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#repair-device #wrapper #repair-description #description-text .description {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+#repair-device #wrapper #repair-description #description-text .list {
+    margin: 15px 0 0 0;
+    list-style: none;
+}
+#repair-device #wrapper #repair-description #description-text .list li::before {
+    content: "\2022";
+    color: #3a90d9;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin: 10px 0 0 0;
+}
+#repair-device #wrapper #repair-description #description-text .list li span {
+    color: #777;
+    margin: 10px 0 0 0;
+}
+#repair-device #wrapper #repair-description #cards .card {
+    
+    padding: 10px 0;
+    border-radius: 10px;
+    
+    margin: 15px 0 0 0;
+}
+#repair-device #wrapper #repair-description #cards .card .description {
+    font-size: 10px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ddd;
+}
+#repair-device #wrapper #repair-description #cards .card .bolded {
+    text-align: center;
+    font-size: 10px;
+    font-family: sans-serif;
+    color: #ddd;
+    margin: 5px 0 0 0;
+}
+#repair-device #wrapper #repair-description #cards #violet-card {
+    background-color: #9188cc;
+}
+#repair-device #wrapper #repair-description #cards #red-card {
+    background-color: #e96d6d;
+}
+#repair-device #wrapper #repair-description #cards #green-card {
+    background-color: #54c1ff;
+}
+#repair-device #wrapper #price-time {
+    background-color: #555;
+    padding: 4%;
+}
+#repair-price-time #wrapper {
+    background-color: #566372;
+    padding: 3%;
+    border-top-right-radius: 4%;
+    border-top-left-radius: 4%;
+}
+#repair-price-time #wrapper #price-time {
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+#repair-price-time #wrapper #price-time #list {
+    display: flex;
+}
+#repair-price-time #wrapper #price-time #title {
+    color: #888;
+}
+#repair-price-time #wrapper #price-time #title i {
+    margin: 0 5px 10px 0;
+}
+#repair-price-time #wrapper #price-time #description .description-text {
+    font-size: 19px;
+    color: #3582d1;
+}
+#repair-price-time #wrapper #price-time #button button {
+    width: 100%;
+    border: none;
+    background-color: #4e92d6;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    border-radius: 3%;
+    cursor: pointer;
+} 
+#repair-price-time #wrapper #price-time #button button:hover {
+    transition: all 0.6s;
+    background-color: #63a9e6;
+}
+#repair-device-benefits #wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: #3e4752;
+    color: #ddd;
+}
+#repair-device-benefits #wrapper #benefit {
+    display: flex;
+}
+#repair-device-benefits #wrapper #benefit .title {
+    color: #ddd;
+}
+#repair-device-benefits #wrapper #benefit i {
+    font-size: 30px;
+    margin: 20px 0 0 20px;
+}
+#repair-device-benefits #wrapper #benefit .title {
+    font-family: sans-serif;
+    margin: 0 0 10px 0;
+}
+#repair-device-benefits #wrapper #benefit #benefits-list {
+    list-style: none;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+#devices #wrapper {
+    display: flex;
+    justify-content: left;
+}
+#devices .image-source-brand {
+    width: 105px;
+    margin: -10px 0 0 0;
+}
+#repair-device-description #wrapper {
+    background-color: #fff;
+    border-radius: 2%;
+    margin: 25px 0 0 0;
+    padding: 3%;
+}
+#repair-device-description #wrapper #title-text {
+    margin: 10px 0 20px 0;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+#repair-device-description #wrapper #repair-description .title {
+    margin: 15px 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+#repair-device-description #wrapper #repair-description .sub-text {
+    margin: 15px 0;
+}
+#repair-device-description #wrapper #repair-description #list {
+    margin: 10px 40px;
+}
+#repair-device-description #wrapper #repair-description #list li {
+    margin: 5px 0 0 0;
+}
