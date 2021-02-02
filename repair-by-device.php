@@ -34,7 +34,7 @@
                         </ul>
                     </div>
                     <div class="col-3" id="cards">
-                        <div class="card" id="violet-card">
+                        <div class="card" id="green-card">
                             <p class="description">
                                 БРОНЕСТЕКЛО 
                             </p>
@@ -42,7 +42,7 @@
                                 <b>В ПОДАРОК</b>
                             </p>
                         </div>
-                        <div class="card" id="red-card">
+                        <div class="card" id="blue-card">
                             <p class="description">
                                 ОБМЕН 
                             </p>
@@ -50,7 +50,7 @@
                                 <b>НА НОВЫЙ</b> 
                             </p>
                         </div>
-                        <div class="card" id="green-card">
+                        <div class="card" id="lightblue-card">
                             <p class="description">
                                 ОПЛАТА 
                             </p>

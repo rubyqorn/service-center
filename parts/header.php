@@ -59,8 +59,8 @@
                         <a href="/"><img src="img/logo.svg" alt=""></a>
                     </div>
                     <div class="info-item">
-                        <span>РЕМОНТ МАРЬИНО</span>
-                        <p>Сервисный центр</p>
+                        <span class="title">РЕМОНТ МАРЬИНО</span>
+                        <p class="description">Сервисный центр</p>
                     </div>
                     <span class="vertical-line"></span>
                 </div>

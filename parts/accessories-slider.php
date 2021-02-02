@@ -23,7 +23,7 @@
                                     <div class="image"><img src="img/stekl0-2-min.png" alt=""></div>
                                 </div>
                                 <div class="col-6" id="text">
-                                    <p>ЗАЩИТНОЕ СТЕКЛО</p>
+                                    <p class="name-text">ЗАЩИТНОЕ СТЕКЛО</p>
                                     <span class="bolded-text"><b>ОТ 300 Р</b></span>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                                     <img src="img/usb_c-min.png" alt="">
                                 </div>
                                 <div class="col-6" id="text">
-                                    <p>КАБЕЛЬ USB</p>
+                                    <p class="name-text">КАБЕЛЬ USB</p>
                                     <span class="bolded-text"><b>ОТ 300 Р</b></span>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@
                                     <div class="image"><img src="img/block_all-min.png" alt=""></div>
                                 </div>
                                 <div class="col-6" id="text">
-                                    <p>БЛОК ПИТАНИЯ</p>
+                                    <p class="name-text">БЛОК ПИТАНИЯ</p>
                                     <span class="bolded-text"><b>ОТ 600 Р</b></span>
                                 </div>
                             </div>
@@ -70,7 +70,7 @@
                                     <div class="image"><img src="img/air-pods-min.png" alt=""></div>
                                 </div>
                                 <div class="col-6" id="text">
-                                    <p>НАУШНИКИ В АССОРТИМЕНТЕ</p>
+                                    <p class="name-text">НАУШНИКИ В АССОРТИМЕНТЕ</p>
                                     <span class="bolded-text"><b>ОТ 800 Р</b></span>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@
                                     <div class="image"><img src="img/chehly-min.png" alt=""></div>
                                 </div>
                                 <div class="col-6" id="text">
-                                    <p>ЗАЩИТНЫЕ ЧЕХЛЫ</p>
+                                    <p class="name-text">ЗАЩИТНЫЕ ЧЕХЛЫ</p>
                                     <span class="bolded-text"><b>ОТ 300 Р</b></span>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@
                                     <div class="image"><img src="img/air-pods-min.png" alt=""></div>
                                 </div>
                                 <div class="col-6" id="text">
-                                    <p>ГРАЖДАНАМ С ЛЬГОТАМИ</p>
+                                    <p class="name-text">ГРАЖДАНАМ С ЛЬГОТАМИ</p>
                                     <span class="bolded-text"><b>СКИДКА 5%</b></span>
                                 </div>
                             </div>

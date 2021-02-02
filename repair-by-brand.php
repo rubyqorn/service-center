@@ -98,7 +98,7 @@
         </section>
     </section>
 
-    <section class="container" id="repair-model-selection-preview">
+    <section class="container header" id="repair-model-selection-preview">
         <div class="col-12 mr-for-hoverable">
             <p class="preview-text">ВЫБЕРИТЕ СВОЮ МОДЕЛЬ</p>
         </div>
