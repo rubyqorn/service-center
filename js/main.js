@@ -40,6 +40,10 @@ $(document).ready(function(){
     $('#reviews-preview #slider-buttons #previous-review-slide').click(function() {
         reviewsSlider.trigger('prev.owl.carousel');
     })
+
+    $('#repair-navbar .toggle-menu .menu-toggler').click(function() {
+        $('#repair-navbar .toggle-menu .col-lg-12').slideToggle('slow');
+    })
 });
 
 function toggleAccordionItem(blockName) {

@@ -3,16 +3,16 @@
         require 'parts/header.php';
     ?>
 
-    <section class="container-full-width" id="preview">
-        <div class="container">
-            <div class="col-5" id="preview-text">
+    <section class="col-lg-12" id="preview">
+        <div class="container justify-content-between">
+            <div class="col-lg-5" id="preview-text">
                 <p class="service">Сервисный центр</p>
                 <p class="service-location">Ремонт Марьино</p>
                 <p class="service-description">
                     Профессиональный ремонт смартфонов, планшетов, ноутбуков любой сложности.
                 </p>
             </div>
-            <div class="col-6" id="banner">
+            <div class="col-lg-7" id="banner">
                 <img src="img/banner.png" alt="">
             </div>
         </div>
@@ -26,8 +26,8 @@
         </div>
     </section>
 
-    <section class="container" id="devices">
-        <div class="col-12">
+    <section class="col-lg-12" id="devices">
+        <div class="container justify-content-between">
             <a href="repair-by-device.php" class="col-3" id="device-selection">
                 <div class="col-12">
                     <p class="title">
@@ -38,15 +38,15 @@
                     <div class="circle-bg"></div>
                     <div class="image"><img src="img/nout.png" alt="" class="image-source"></div>
                 </div>
-                <div class="col-12" id="device-info">
-                    <div class="col-6" id="price">
+                <div class="container justify-content-between" id="device-info">
+                    <div id="price">
                         <span class="device-price">
                             <small>
                                 от 1200
                             </small>
                         </span>
                     </div>
-                    <div class="col-5" id="get-more-info">
+                    <div id="get-more-info">
                         <button class="btn-more">
                             Подробнее
                         </button>
@@ -63,15 +63,15 @@
                     <div class="circle-bg"></div>
                     <div class="image"><img src="img/nout.png" alt="" class="image-source"></div>
                 </div>
-                <div class="col-12" id="device-info">
-                    <div class="col-6" id="price">
+                <div class="container justify-content-between" id="device-info">
+                    <div id="price">
                         <span class="device-price">
                             <small>
                                 от 1200
                             </small>
                         </span>
                     </div>
-                    <div class="col-5" id="get-more-info">
+                    <div id="get-more-info">
                         <button class="btn-more">
                             Подробнее
                         </button>
@@ -88,15 +88,15 @@
                     <div class="circle-bg"></div>
                     <div class="image"><img src="img/nout.png" alt="" class="image-source"></div>
                 </div>
-                <div class="col-12" id="device-info">
-                    <div class="col-6" id="price">
+                <div class="container justify-content-between" id="device-info">
+                    <div id="price">
                         <span class="device-price">
                             <small>
                                 от 1200
                             </small>
                         </span>
                     </div>
-                    <div class="col-5" id="get-more-info">
+                    <div id="get-more-info">
                         <button class="btn-more">
                             Подробнее
                         </button>
@@ -113,15 +113,15 @@
                     <div class="circle-bg"></div>
                     <div class="image"><img src="img/nout.png" alt="" class="image-source"></div>
                 </div>
-                <div class="col-12" id="device-info">
-                    <div class="col-6" id="price">
+                <div class="container justify-content-between" id="device-info">
+                    <div id="price">
                         <span class="device-price">
                             <small>
                                 от 1200
                             </small>
                         </span>
                     </div>
-                    <div class="col-5" id="get-more-info">
+                    <div id="get-more-info">
                         <button class="btn-more">
                             Подробнее
                         </button>
@@ -138,15 +138,15 @@
                     <div class="circle-bg"></div>
                     <div class="image"><img src="img/nout.png" alt="" class="image-source"></div>
                 </div>
-                <div class="col-12" id="device-info">
-                    <div class="col-6" id="price">
+                <div class="container justify-content-between" id="device-info">
+                    <div id="price">
                         <span class="device-price">
                             <small>
                                 от 1200
                             </small>
                         </span>
                     </div>
-                    <div class="col-5" id="get-more-info">
+                    <div id="get-more-info">
                         <button class="btn-more">
                             Подробнее
                         </button>
@@ -163,15 +163,15 @@
                     <div class="circle-bg"></div>
                     <div class="image"><img src="img/nout.png" alt="" class="image-source"></div>
                 </div>
-                <div class="col-12" id="device-info">
-                    <div class="col-6" id="price">
+                <div class="container justify-content-between" id="device-info">
+                    <div id="price">
                         <span class="device-price">
                             <small>
                                 от 1200
                             </small>
                         </span>
                     </div>
-                    <div class="col-5" id="get-more-info">
+                    <div id="get-more-info">
                         <button class="btn-more">
                             Подробнее
                         </button>
@@ -188,15 +188,15 @@
                     <div class="circle-bg"></div>
                     <div class="image"><img src="img/nout.png" alt="" class="image-source"></div>
                 </div>
-                <div class="col-12" id="device-info">
-                    <div class="col-6" id="price">
+                <div class="container justify-content-between" id="device-info">
+                    <div id="price">
                         <span class="device-price">
                             <small>
                                 от 1200
                             </small>
                         </span>
                     </div>
-                    <div class="col-5" id="get-more-info">
+                    <div id="get-more-info">
                         <button class="btn-more">
                             Подробнее
                         </button>
@@ -213,15 +213,15 @@
                     <div class="circle-bg"></div>
                     <div class="image"><img src="img/nout.png" alt="" class="image-source"></div>
                 </div>
-                <div class="col-12" id="device-info">
-                    <div class="col-6" id="price">
+                <div class="container justify-content-between" id="device-info">
+                    <div id="price">
                         <span class="device-price">
                             <small>
                                 от 1200
                             </small>
                         </span>
                     </div>
-                    <div class="col-5" id="get-more-info">
+                    <div id="get-more-info">
                         <button class="btn-more">
                             Подробнее
                         </button>

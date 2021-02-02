@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <nav class="col-12 navbar-links-list" id="navbar-links">
+    <nav class="col-lg-12 navbar-links-list" id="navbar-links">
         <div class="container">
             <ul class="links-list">
                 <li class="list-link">
@@ -51,43 +51,37 @@
         </div>
     </nav>
 
-    <header class="col-12 service-info" id="service-info">
-        <div class="container wrapper">
-            <div class="col-6 left-side" id="left-side">
-                <div class="col-6 logo">
-                    <div class="info-item">
-                        <a href="/"><img src="img/logo.svg" alt=""></a>
-                    </div>
-                    <div class="info-item">
-                        <span class="title">РЕМОНТ МАРЬИНО</span>
-                        <p class="description">Сервисный центр</p>
-                    </div>
-                    <span class="vertical-line"></span>
+    <header class="col-lg-12 service-info" id="service-info">
+        <div class="container justify-content-between">
+            <div class="logo">
+                <div class="info-item">
+                    <a href="/"><img src="img/logo.svg" alt=""></a>
                 </div>
-                
-                <div class="col-6 address">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="info-item">
-                        <span>Москва, м. Братиславская,</span>
-                        <p>Мячковский бульвар, д. 6, корп. 1</p>
-                    </div>
+                <div class="info-item">
+                    <span class="title">РЕМОНТ МАРЬИНО</span>
+                    <p class="description">Сервисный центр</p>
                 </div>
             </div>
-            
-            <div class="col-6 right-side" id="right-side">
-                <div class="col-6 feedback" id="feedback">
-                    <div class="info-item">
-                        <button class="btn-call" id="request-form">Заказать звонок</button>
-                    </div>
+            <span class="vertical-line"></span>
+            <div class="address">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
                 </div>
-                <span class="vertical-line"></span>
-                <div class="col-6 schedule">
-                    <div class="info-item">
-                        <a href="tel:+79857848490" class="phone-service-number">+7 (985) 784-84-90</a>
-                        <p class="schedule">Ежедневно 10:00-21:00</p>
-                    </div>
+                <div class="info-item">
+                    <span>Москва, м. Братиславская,</span>
+                    <p>Мячковский бульвар, д. 6, корп. 1</p>
+                </div>
+            </div>
+            <div class="feedback" id="feedback">
+                <div class="info-item">
+                    <button class="btn-call" id="request-form">Заказать звонок</button>
+                </div>
+            </div>
+            <span class="vertical-line"></span>
+            <div class="schedule">
+                <div class="info-item">
+                    <a href="tel:+79857848490" class="phone-service-number">+7 (985) 784-84-90</a>
+                    <p class="schedule">Ежедневно 10:00-21:00</p>
                 </div>
             </div>
         </div>
@@ -95,7 +89,7 @@
 
     <div id="request-form-modal" class="modal">
         <div class="modal-content">
-            <div class="col-12">
+            <div class="col-12 col-sm-12">
                 <span class="close">&times;</span>
             </div>
             <div class="col-9" id="form-title">
@@ -132,92 +126,156 @@
         </div>
     </div>
 
-    <header class="col-12 repair-navbar" id="repair-navbar">
+    <header class="col-lg-12 repair-navbar" id="repair-navbar">
         <div class="container">
-            <div class="col-2">
-                <div class="repair-link">
-                    <i class="fas fa-mobile-alt"></i>
-                    <div class="menu-item">
-                        <a href="repair.php" class="repair-title">
-                            <span>Ремонт</span>
-                            <p>Телефонов</p>
-                        </a>
-                    </div>
+            <div class="menu container justify-content-between">
+            <div class="repair-link">
+                <i class="fas fa-mobile-alt"></i>
+                <div class="menu-item">
+                    <a href="repair.php" class="repair-title">
+                        <span>Ремонт</span>
+                        <p>Телефонов</p>
+                    </a>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="repair-link">
-                    <i class="fas fa-tablet-alt"></i>
-                    <div class="menu-item">
-                        <a href="repair.php" class="repair-title">
-                            <span>Ремонт</span>
-                            <p>Планшетов</p>
-                        </a>
-                    </div>
+            <div class="repair-link">
+                <i class="fas fa-tablet-alt"></i>
+                <div class="menu-item">
+                    <a href="repair.php" class="repair-title">
+                        <span>Ремонт</span>
+                        <p>Планшетов</p>
+                    </a>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="repair-link">
-                    <i class="fas fa-laptop"></i>
-                    <div class="menu-item">
-                        <a href="repair.php" class="repair-title">
-                            <span>Ремонт</span>
-                            <p>Ноутбуков</p>
-                        </a>
-                    </div>
-                </div>
-            </div><div class="col-2">
-                <div class="repair-link">
-                    <i class="fas fa-server"></i>
-                    <div class="menu-item">
-                        <a href="repair.php" class="repair-title">
-                            <span>Ремонт</span>
-                            <p>Компьютеров</p>
-                        </a>
-                    </div>
+            <div class="repair-link">
+                <i class="fas fa-laptop"></i>
+                <div class="menu-item">
+                    <a href="repair.php" class="repair-title">
+                        <span>Ремонт</span>
+                        <p>Ноутбуков</p>
+                    </a>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="repair-link">
-                    <i class="fas fa-desktop"></i>
-                    <div class="menu-item">
-                        <a href="repair.php" class="repair-title">
-                            <span>Ремонт</span>
-                            <p>Моноблоков</p>
-                        </a>
-                    </div>
+            <div class="repair-link">
+                <i class="fas fa-server"></i>
+                <div class="menu-item">
+                    <a href="repair.php" class="repair-title">
+                        <span>Ремонт</span>
+                        <p>Компьютеров</p>
+                    </a>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="repair-link">
-                    <i class="fas fa-gamepad"></i>
-                    <div class="menu-item">
-                        <a href="repair.php" class="repair-title">
-                            <span>Ремонт</span>
-                            <p>Приставок</p>
-                        </a>
-                    </div>
+            <div class="repair-link">
+                <i class="fas fa-desktop"></i>
+                <div class="menu-item">
+                    <a href="repair.php" class="repair-title">
+                        <span>Ремонт</span>
+                        <p>Моноблоков</p>
+                    </a>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="repair-link">
-                    <i class="fas fa-clock"></i>
-                    <div class="menu-item">
-                        <a href="repair.php" class="repair-title">
-                            <span>Ремонт</span>
-                            <p>Умных часов</p>
-                        </a>
-                    </div>
+            <div class="repair-link">
+                <i class="fas fa-gamepad"></i>
+                <div class="menu-item">
+                    <a href="repair.php" class="repair-title">
+                        <span>Ремонт</span>
+                        <p>Приставок</p>
+                    </a>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="repair-link">
-                    <i class="fas fa-microchip"></i>
-                    <div class="menu-item">
-                        <a href="repair.php" class="repair-title">
-                            <span>Ремонт</span>
-                            <p>Видеокарт</p>
-                        </a>
+            <div class="repair-link">
+                <i class="fas fa-clock"></i>
+                <div class="menu-item">
+                    <a href="repair.php" class="repair-title">
+                        <span>Ремонт</span>
+                        <p>Умных часов</p>
+                    </a>
+                </div>
+            </div>
+            <div class="repair-link">
+                <i class="fas fa-microchip"></i>
+                <div class="menu-item">
+                    <a href="repair.php" class="repair-title">
+                        <span>Ремонт</span>
+                        <p>Видеокарт</p>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="toggle-menu">
+                <button class="menu-toggler"><i class="fas fa-bars"></i></button>
+                <div class="col-lg-12">
+                    <div class="repair-link">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="menu-item">
+                            <a href="repair.php" class="repair-title">
+                                <span>Ремонт</span>
+                                <p>Телефонов</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="repair-link">
+                        <i class="fas fa-tablet-alt"></i>
+                        <div class="menu-item">
+                            <a href="repair.php" class="repair-title">
+                                <span>Ремонт</span>
+                                <p>Планшетов</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="repair-link">
+                        <i class="fas fa-laptop"></i>
+                        <div class="menu-item">
+                            <a href="repair.php" class="repair-title">
+                                <span>Ремонт</span>
+                                <p>Ноутбуков</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="repair-link">
+                        <i class="fas fa-server"></i>
+                        <div class="menu-item">
+                            <a href="repair.php" class="repair-title">
+                                <span>Ремонт</span>
+                                <p>Компьютеров</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="repair-link">
+                        <i class="fas fa-desktop"></i>
+                        <div class="menu-item">
+                            <a href="repair.php" class="repair-title">
+                                <span>Ремонт</span>
+                                <p>Моноблоков</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="repair-link">
+                        <i class="fas fa-gamepad"></i>
+                        <div class="menu-item">
+                            <a href="repair.php" class="repair-title">
+                                <span>Ремонт</span>
+                                <p>Приставок</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="repair-link">
+                        <i class="fas fa-clock"></i>
+                        <div class="menu-item">
+                            <a href="repair.php" class="repair-title">
+                                <span>Ремонт</span>
+                                <p>Умных часов</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="repair-link">
+                        <i class="fas fa-microchip"></i>
+                        <div class="menu-item">
+                            <a href="repair.php" class="repair-title">
+                                <span>Ремонт</span>
+                                <p>Видеокарт</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
