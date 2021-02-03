@@ -1,7 +1,7 @@
     <?php 
         $title = 'Main'; 
         require 'parts/header.php';
-    ?>
+    ?>вввввв
 
     <section class="col-lg-12" id="preview">
         <div class="container justify-content-between">
