@@ -237,8 +237,8 @@
         </div>
     </section>
 
-    <section id="brands" class="container">
-        <div class="col-12">
+    <section id="brands" class="col-lg-12">
+        <div class="container justify-content-between">
             <a href="repair-by-brand.php" class="col-1" id="brands-selection">
                 <div class="container">
                     <span class="title">APPLE</span>
@@ -485,13 +485,13 @@
     <?php require 'parts/callback-form.php'; ?>    
 
     <section class="container" id="promotion-slider">
-        <div class="col-12 owl-carousel" id="wrapper">
-            <section class="col-12 header" id="promotion-preview">
-                <div class="col-12" id="wrapper">
-                    <div class="col-10" id="title">
+        <div class="owl-carousel" id="wrapper">
+            <section class="col-lg-12 header" id="promotion-preview">
+                <div class="row">
+                    <div class="col-lg-11" id="title">
                         <p class="preview-text">АКЦИИ И СКИДКИ</p>
                     </div>
-                    <div class="col-2" id="navs">
+                    <div class="col-lg-1 justify-content-between" id="navs">
                         <i class="fas fa-chevron-left prev"></i>
                         <i class="fas fa-chevron-right next"></i>
                     </div>
@@ -500,14 +500,14 @@
             <div class="owl-stage-outer">
                 <div class="owl-stage">
                     <div class="owl-item">
-                        <div class="slide" id="glass">
+                        <div class="slide container" id="glass">
                             <p class="title">С 21 ДЕКАБРЯ ПО 27 ДЕКАБРЯ</p>
-                            <div class="container">
-                                <div class="col-6" id="image">
+                            <div class="row">
+                                <div class="col-lg-6" id="image">
                                     <div class="circle-bg"></div>
                                     <div class="image"><img src="img/stekl0-2-min.png" alt=""></div>
                                 </div>
-                                <div class="col-6" id="text">
+                                <div class="col-lg-6 justify-content-center" id="text">
                                     <p class="title-text">ЗАЩИТНОЕ СТЕКЛО</p>
                                     <span class="bolded-text"><b>В ПОДАРОК!</b></span>
                                 </div>
@@ -515,14 +515,14 @@
                         </div>
                     </div>
 
-                    <div class=" owl-item">
+                    <div class="owl-item">
                         <div class="slide" id="promo-500">
                             <p class="title">С 21 ДЕКАБРЯ ПО 27 ДЕКАБРЯ</p>
-                            <div class="container">
-                                <div class="col-6" id="not-absolute-image">
-                                    <img src="img/500-krg-100-min.png" alt="">
+                            <div class="row">
+                                <div class="col-lg-6" id="not-absolute-image">
+                                    <div class="image col-lg-12 col-sm-2"><img src="img/500-krg-100-min.png" alt=""></div>
                                 </div>
-                                <div class="col-6" id="text">
+                                <div class="col-lg-6" id="text">
                                     <p class="title-text">НА ВТОРУЮ УСТУГУ</p>
                                     <span class="bolded-text"><b>СКИДКА 500 Р!</b></span>
                                 </div>
@@ -533,12 +533,12 @@
                     <div class="owl-item">
                         <div class="slide" id="two-and-more">
                             <p class="title">АКЦИЯ</p>
-                            <div class="container">
-                                <div class="col-6" id="image">
+                            <div class="row">
+                                <div class="col-lg-6" id="image">
                                     <div class="circle-bg"></div>
                                     <div class="image"><img src="img/3-bolee-min.png" alt=""></div>
                                 </div>
-                                <div class="col-6" id="text">
+                                <div class="col-lg-6" id="text">
                                     <p class="title-text">ПРИ ЗАКАЗЕ ОТ 2-Х УСЛУГ</p>
                                     <span class="bolded-text"><b>СКИДКА 10%</b></span>
                                 </div>
@@ -549,12 +549,12 @@
                     <div class="owl-item">
                         <div class="slide" id="priveleged">
                             <p class="title">АКЦИЯ</p>
-                            <div class="container">
-                                <div class="col-6" id="image">
+                            <div class="row">
+                                <div class="col-lg-6" id="image">
                                     <div class="circle-bg"></div>
                                     <div class="image"><img src="img/lgoty-min.png" alt=""></div>
                                 </div>
-                                <div class="col-6" id="text">
+                                <div class="col-lg-6" id="text">
                                     <p class="title-text">ГРАЖДАНАМ С ЛЬГОТАМИ</p>
                                     <span class="bolded-text"><b>СКИДКА 5%</b></span>
                                 </div>
@@ -563,16 +563,15 @@
                     </div>
 
                     <div class="owl-item">
-                        <div class="slide" id="priveleged">
-                            <p class="title">АКЦИЯ</p>
-                            <div class="container">
-                                <div class="col-6" id="image">
-                                    <div class="circle-bg"></div>
-                                    <div class="image"><img src="img/stekl0-2-min.png" alt=""></div>
+                        <div class="slide" id="promo-500">
+                            <p class="title">С 21 ДЕКАБРЯ ПО 27 ДЕКАБРЯ</p>
+                            <div class="row">
+                                <div class="col-lg-6" id="not-absolute-image">
+                                    <div class="image col-lg-12 col-sm-2"><img src="img/500-krg-100-min.png" alt=""></div>
                                 </div>
-                                <div class="col-6" id="text">
-                                    <p class="title-text">ГРАЖДАНАМ С ЛЬГОТАМИ</p>
-                                    <span class="bolded-text"><b>СКИДКА 5%</b></span>
+                                <div class="col-lg-6" id="text">
+                                    <p class="title-text">НА ВТОРУЮ УСТУГУ</p>
+                                    <span class="bolded-text"><b>СКИДКА 500 Р!</b></span>
                                 </div>
                             </div>
                         </div>
@@ -581,12 +580,12 @@
                     <div class="owl-item">
                         <div class="slide" id="two-and-more">
                             <p class="title">АКЦИЯ</p>
-                            <div class="container">
-                                <div class="col-6" id="image">
+                            <div class="row">
+                                <div class="col-lg-6" id="image">
                                     <div class="circle-bg"></div>
                                     <div class="image"><img src="img/3-bolee-min.png" alt=""></div>
                                 </div>
-                                <div class="col-6" id="text">
+                                <div class="col-lg-6" id="text">
                                     <p class="title-text">ПРИ ЗАКАЗЕ ОТ 2-Х УСЛУГ</p>
                                     <span class="bolded-text"><b>СКИДКА 10%</b></span>
                                 </div>
@@ -595,7 +594,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 owl-dots">
+            <div class="col-lg-12 owl-dots">
                 <div class="owl-dot active"><span></span></div>
                 <div class="owl-dot"><span></span></div>
             </div>

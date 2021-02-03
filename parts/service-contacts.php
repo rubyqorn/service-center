@@ -5,33 +5,35 @@
     </section>
 
     <section class="container" id="service-contacts">
-        <div class="col-12" id="wrapper">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8226748080fd3d59de2143b5224728fd65ce750802c262325bd7623e1fd8ee1d&amp;source=constructor" width="600" height="420" frameborder="0"></iframe>
+        <div class="row justify-content-between" id="wrapper">
+            <div class="col-lg-6">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8226748080fd3d59de2143b5224728fd65ce750802c262325bd7623e1fd8ee1d&amp;source=constructor" width="100%" height="420" frameborder="0"></iframe>
+            </div>
             
-            <div class="col-6" id="service-contacts-info">
-                <div class="col-12" id="contacts-title">
-                    <div class="col-7" id="logo">
-                        <div class="col-2">
+            <div class="col-lg-6" id="service-contacts-info">
+                <div class="col-lg-12" id="contacts-title">
+                    <div class="col-lg-7" id="logo">
+                        <div class="col-lg-2">
                             <img src="img/logo.svg" alt="">
                         </div>
-                        <div class="col-10">
+                        <div class="col-lg-10">
                             <span class="title">РЕМОНТ МАРЬИНО</span>
                             <p class="description">СЕРВИСНЫЙ ЦЕНТР</p>
                         </div>
                     </div>
-                    <div class="col-5" id="cards">
+                    <div class="col-lg-5" id="cards">
                         <i class="fab fa-cc-visa"></i>
                         <i class="fab fa-cc-visa"></i>
                         <i class="fab fa-cc-visa"></i>
                         <i class="fab fa-cc-visa"></i>
                     </div>
                 </div>
-                <div class="col-12" id="contacts-info">
-                    <div class="col-6">
-                        <div class="col-12" id="phones">
+                <div class="col-lg-12" id="contacts-info">
+                    <div class="col-lg-6">
+                        <div class="col-lg-12" id="phones">
                             <div class="title">
                                 <i class="fas fa-phone"></i>
-                                <span class="title">Контактый телефон</span>
+                                <span class="title-text">Контактый телефон</span>
                             </div>
                             <div class="phones">
                                 <div class="phone">
@@ -42,10 +44,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12" id="address">
+                        <div class="col-lg-12" id="address">
                             <div class="title">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span class="title">Адрес</span>
+                                <span class="title-text">Адрес</span>
                             </div>
                             <div class="description">
                                 <p class="address-text">
@@ -53,10 +55,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-12" id="schedule">
+                        <div class="col-lg-12" id="schedule">
                             <div class="title">
                                 <i class="fas fa-clock"></i>
-                                <span class="title">Время работы</span>
+                                <span class="title-text">Время работы</span>
                             </div>
                             <div class="description">
                                 <p class="schedule-text">
@@ -67,10 +69,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-12" id="email">
+                        <div class="col-lg-12" id="email">
                             <div class="title">
                                 <i class="fas fa-envelope"></i>
-                                <span class="title">E-mail</span>
+                                <span class="title-text">E-mail</span>
                             </div>
                             <div class="description">
                                 <p class="email-text">
@@ -79,7 +81,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <div class="col-12" id="metro">
                             <span class="title">Ближайшее метро</span>
                             <p class="metro-service-range">
@@ -100,7 +102,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-12" id="stations">
+                        <div class="col-lg-12" id="stations">
                             <span class="title">Ближайшие остановки</span>
                             <p class="station-name">
                                 <i class="fas fa-subway"></i>

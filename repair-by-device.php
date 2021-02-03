@@ -4,7 +4,7 @@
     ?>
 
     <section class="container" id="breadcrumbs">
-        <div class="col-7">
+        <div class="col-lg-12">
             <a href="/" class="breadcrumb-item">Главная</a>
             <a href="/" class="breadcrumb-item"> / Ремонт телефонов</a>
             <a href="/" class="breadcrumb-item"> / Apple</a>

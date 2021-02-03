@@ -4,9 +4,9 @@
         </div>
     </section>
 
-    <section class="container-full-width" id="repair-process">
-        <div class="col-12" id="wrapper">
-            <div class="col-2" id="process">
+    <section class="col-lg-12" id="repair-process">
+        <div class="container justify-content-between" id="wrapper">
+            <div class="col-lg-2" id="process">
                 <div class="col-12" id="process-number">
                     <p class="process-number">01</p>
                 </div>
@@ -22,7 +22,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-2" id="process">
+            <div class="col-lg-2" id="process">
                 <div class="col-12" id="process-number">
                     <p class="process-number">02</p>
                 </div>
@@ -38,7 +38,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-2" id="process">
+            <div class="col-lg-2" id="process">
                 <div class="col-12" id="process-number">
                     <p class="process-number">03</p>
                 </div>
@@ -54,7 +54,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-2" id="process">
+            <div class="col-lg-2" id="process">
                 <div class="col-12" id="process-number">
                     <p class="process-number">04</p>
                 </div>
@@ -70,7 +70,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-2" id="process">
+            <div class="col-lg-2" id="process">
                 <div class="col-12" id="process-number">
                     <p class="process-number">05</p>
                 </div>
@@ -87,7 +87,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-2" id="process">
+            <div class="col-lg-2" id="process">
                 <div class="col-12" id="process-number">
                     <p class="process-number">06</p>
                 </div>

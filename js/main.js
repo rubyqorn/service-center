@@ -3,10 +3,21 @@ $(document).ready(function(){
     
     promotionSlider.owlCarousel({
         loop:true,
-        margin:40,
+        margin:15,
         items: 4,
         autoplay: true,
         dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            992: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
     });
 
     $('#promotion-slider #navs .next').click(function() {
@@ -31,6 +42,17 @@ $(document).ready(function(){
         loop:true,
         autoplay: true,
         dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
     });
 
     $('#reviews-preview #slider-buttons #next-review-slide').click(function() {
@@ -43,6 +65,14 @@ $(document).ready(function(){
 
     $('#repair-navbar .toggle-menu .menu-toggler').click(function() {
         $('#repair-navbar .toggle-menu .col-lg-12').slideToggle('slow');
+    })
+
+    $('#footer .service-links .links .title .service-dropdown').click(function() {
+        $('#footer .service-links .info').slideToggle('slow');
+    })
+
+    $('#footer .service-links .links .title .devices-dropdown').click(function() {
+        $('#footer .service-links .devices').slideToggle('slow');
     })
 });
 

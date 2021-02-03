@@ -6,7 +6,7 @@
     <section class="container-full-width" id="repair-preview">
         <div class="container" id="wrapper">
             <div class="col-6" id="left-side">
-                <div class="col-12" id="breadcrumbs">
+                <div class="col-lg-12" id="breadcrumbs">
                     <a href="/" class="hoverable">Главная</a>
                     <a href="/" class="hoverable"> / Ремонт телефонов</a>
                     <span class="current-page"> / Apple</span>
