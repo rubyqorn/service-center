@@ -36,7 +36,7 @@ $justify_flex_around: space-around;
 
 html {
     box-sizing: border-box;
-  }
+}
   
 *,
 *::before,
@@ -151,23 +151,23 @@ html {
 }
 
 .justify-content-start {
-    -ms-flex-pack: start !important;
-    justify-content: flex-start !important;
+    -ms-flex-pack: $justify_start !important;
+    justify-content: $justify_flex_start !important;
 }
 
 .justify-content-end {
-    -ms-flex-pack: end !important;
-    justify-content: flex-end !important;
+    -ms-flex-pack: $justify_end !important;
+    justify-content: $justify_flex_end !important;
 }
 
 .justify-content-center {
-    -ms-flex-pack: center !important;
-    justify-content: center !important;
+    -ms-flex-pack: $justify_center !important;
+    justify-content: $justify_flex_center !important;
 }
 
 .justify-content-between {
-    -ms-flex-pack: justify !important;
-    justify-content: space-between !important;
+    -ms-flex-pack: $justify_between !important;
+    justify-content: $justify_flex_between !important;
 }
 
 .justify-content-around {
