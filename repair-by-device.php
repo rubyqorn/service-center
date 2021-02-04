@@ -13,13 +13,13 @@
     </section>
 
     <section class="container" id="repair-device">
-        <div class="col-12" id="wrapper">
-            <div class="col-12" id="description">
-                <div class="col-2" id="image">
+        <div class="col-lg-12" id="wrapper">
+            <div class="col-lg-12" id="description">
+                <div class="col-lg-5" id="image">
                     <img src="img/iphone-12-pro-max.png" alt="">
                 </div>
-                <div class="col-7" id="repair-description">
-                    <div class="col-10" id="description-text">
+                <div class="col-lg-7" id="repair-description">
+                    <div class="col-lg-10" id="description-text">
                         <p class="title">
                             РЕМОНТ IPHONE 12 PRO MAX
                         </p>
@@ -33,7 +33,7 @@
                             <li><span class="text-list">Комфортное ожидание во время ремонта</span></li>
                         </ul>
                     </div>
-                    <div class="col-3" id="cards">
+                    <div class="col-lg-3" id="cards">
                         <div class="card" id="green-card">
                             <p class="description">
                                 БРОНЕСТЕКЛО 
@@ -64,33 +64,33 @@
         </div>
     </section>
     <section class="container" id="repair-price-time">
-        <div class="col-12" id="wrapper">
-            <div class="col-7" id="price-time">
-                <div class="col-10" id="list">
-                    <div class="col-6">
-                        <div class="col-12" id="title">
+        <div class="col-lg-12" id="wrapper">
+            <div class="col-lg-7" id="price-time">
+                <div class="col-lg-10" id="list">
+                    <div class="col-lg-6">
+                        <div class="col-lg-12" id="title">
                             <i class="fas fa-money-bill"></i>
                             <span>Цена</span>
                         </div>
-                        <div class="col-12" id="description">
+                        <div class="col-lg-12" id="description">
                             <p class="description-text">
                                 от 1200 Руб.
                             </p>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="col-12" id="title">
+                    <div class="col-lg-6">
+                        <div class="col-lg-12" id="title">
                             <i class="far fa-clock"></i>
                             <span>Время</span>
                         </div>
-                        <div class="col-12" id="description">
+                        <div class="col-lg-12" id="description">
                             <p class="description-text">
                                 от 15 мин.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-3" id="button">
+                <div class="col-lg-3" id="button">
                     <button class="order-btn" id="request-form">Заказать ремонт</button>
                 </div>
             </div>
@@ -98,12 +98,12 @@
     </section>
 
     <section class="container" id="repair-device-benefits">
-        <div class="col-12" id="wrapper">
-            <div class="col-4" id="benefit">
-                <div class="col-4">
+        <div class="col-lg-12" id="wrapper">
+            <div class="col-lg-3" id="benefit">
+                <div class="col-lg-2">
                     <i class="far fa-clock"></i>
                 </div>
-                <div class="col-8">
+                <div class="col-lg-10">
                     <p class="title">СРОЧНЫЙ РЕМОНТ</p>
                     <ul id="benefits-list">
                         <li>- Ремонт за 1 час</li>
@@ -113,11 +113,11 @@
                 </div>
             </div>
 
-            <div class="col-4" id="benefit">
-                <div class="col-4">
+            <div class="col-lg-3" id="benefit">
+                <div class="col-lg-2">
                     <i class="fas fa-money-bill"></i>
                 </div>
-                <div class="col-8">
+                <div class="col-lg-10">
                     <p class="title">ГАРАНТИЯ КАЧЕСТВА</p>
                     <ul id="benefits-list">
                         <li>- Оригинальные детали</li>
@@ -127,11 +127,11 @@
                 </div>
             </div>
 
-            <div class="col-4" id="benefit">
-                <div class="col-4">
+            <div class="col-lg-3" id="benefit">
+                <div class="col-lg-2">
                     <i class="far fa-credit-card"></i>
                 </div>
-                <div class="col-8">
+                <div class="col-lg-10">
                     <p class="title">СПОСОБЫ ОПЛАТЫ</p>
                     <ul id="benefits-list">
                         <li>- Оплата картой</li>
@@ -141,11 +141,11 @@
                 </div>
             </div>
 
-            <div class="col-4" id="benefit">
-                <div class="col-4">
+            <div class="col-lg-3" id="benefit">
+                <div class="col-lg-2">
                     <i class="fas fa-parking"></i>
                 </div>
-                <div class="col-8">
+                <div class="col-lg-10">
                     <p class="title">МЕТРО И ПАРКОВКА</p>
                     <ul id="benefits-list">
                         <li>- 2 минуты от метро</li>
@@ -212,77 +212,102 @@
         </div>
     </section>
 
-    <section class="container" id="devices">
-        <div class="col-12" id="wrapper">
-            <a href="repair-by-device.html" class="col-3" id="device-selection">
+    <section class="col-lg-12" id="devices">
+        <div class="container justify-content-between" id="wrapper">
+            <a href="repair-by-device.html" class="col-lg-3" id="device-selection">
                 <div class="col-12">
                     <p class="title">
                         РЕМОНТ IPHONE 12 PRO
                     </p>
                 </div>
-                <div class="col-12" id="image">
+                <div class="col-lg-12" id="image">
                     <div class="circle-bg"></div>
                     <div class="image"><img src="img/iPhone 12 Pro Max-min.png" alt="" class="image-source-brand"></div>
                 </div>
-                <div class="col-12" id="device-info">
-                    <div class="col-6" id="price">
+                <div class="row" id="device-info">
+                    <div class="col-lg-5" id="price">
                         <span class="device-price">
                             <small>
                                 от 1000
                             </small>
                         </span>
                     </div>
-                    <div class="col-5" id="get-more-info">
+                    <div class="col-lg-5" id="get-more-info">
                         <button class="btn-more">
                             Подробнее
                         </button>
                     </div>
                 </div>
             </a>
-            <a href="repair-by-device.html" class="col-3" id="device-selection">
+            <a href="repair-by-device.html" class="col-lg-3" id="device-selection">
                 <div class="col-12">
                     <p class="title">
                         РЕМОНТ IPHONE 12 PRO
                     </p>
                 </div>
-                <div class="col-12" id="image">
+                <div class="col-lg-12" id="image">
                     <div class="circle-bg"></div>
                     <div class="image"><img src="img/iPhone 12 Pro Max-min.png" alt="" class="image-source-brand"></div>
                 </div>
-                <div class="col-12" id="device-info">
-                    <div class="col-6" id="price">
+                <div class="row" id="device-info">
+                    <div class="col-lg-5" id="price">
                         <span class="device-price">
                             <small>
                                 от 1000
                             </small>
                         </span>
                     </div>
-                    <div class="col-5" id="get-more-info">
+                    <div class="col-lg-5" id="get-more-info">
                         <button class="btn-more">
                             Подробнее
                         </button>
                     </div>
                 </div>
             </a>
-            <a href="repair-by-device.html" class="col-3" id="device-selection">
-                <div class="col-12">
+            <a href="repair-by-device.html" class="col-lg-3" id="device-selection">
+                <div class="col-lg-12">
                     <p class="title">
                         РЕМОНТ IPHONE 12 PRO
                     </p>
                 </div>
-                <div class="col-12" id="image">
+                <div class="col-lg-12" id="image">
                     <div class="circle-bg"></div>
                     <div class="image"><img src="img/iPhone 12 Pro Max-min.png" alt="" class="image-source-brand"></div>
                 </div>
-                <div class="col-12" id="device-info">
-                    <div class="col-6" id="price">
+                <div class="row" id="device-info">
+                    <div class="col-lg-5" id="price">
                         <span class="device-price">
                             <small>
                                 от 1000
                             </small>
                         </span>
                     </div>
-                    <div class="col-5" id="get-more-info">
+                    <div class="col-lg-5" id="get-more-info">
+                        <button class="btn-more">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+            </a>
+            <a href="repair-by-device.html" class="col-lg-3" id="device-selection">
+                <div class="col-lg-12">
+                    <p class="title">
+                        РЕМОНТ IPHONE 12 PRO
+                    </p>
+                </div>
+                <div class="col-lg-12" id="image">
+                    <div class="circle-bg"></div>
+                    <div class="image"><img src="img/iPhone 12 Pro Max-min.png" alt="" class="image-source-brand"></div>
+                </div>
+                <div class="row" id="device-info">
+                    <div class="col-lg-5" id="price">
+                        <span class="device-price">
+                            <small>
+                                от 1000
+                            </small>
+                        </span>
+                    </div>
+                    <div class="col-lg-5" id="get-more-info">
                         <button class="btn-more">
                             Подробнее
                         </button>

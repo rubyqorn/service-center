@@ -89,7 +89,7 @@
 
     <div id="request-form-modal" class="modal">
         <div class="modal-content">
-            <div class="col-lg-12 col-sm-12">
+            <div class="col-lg-12">
                 <span class="close">&times;</span>
             </div>
             <div class="col-lg-9" id="form-title">
@@ -106,16 +106,16 @@
                     <div class="col-lg-12" id="name">
                         <input type="text" name="name" class="field" placeholder="Имя">
                     </div>
-                    <div class="col-lg-12" id="phone">
+                    <div class="col-12" id="phone">
                         <input type="text" name="phone" class="field" placeholder="Телефон">
                     </div>
-                    <div class="col-lg-12">
+                    <div class="col-12">
                         <span class="border-line"></span>
                     </div>
-                    <div class="col-lg-12">
+                    <div class="col-12">
                         <button type="submit" class="send-btn">Отправить</button>
                     </div>
-                    <div class="col-lg-12" id="privacy-policy">
+                    <div class="col-12" id="privacy-policy">
                         <input type="checkbox" name="privacy-policy" checked>
                         <span>
                             Я согласен на обработку персональных данных

@@ -157,13 +157,16 @@ body {
     padding: 0 0 15px 0;
 }
 .modal-content #form .field {
-    width: 87%;
+    width: 100%;
     background: transparent;
     color: var(--tl-white);
     border: 1px solid var(--tl-grey);
-    border-radius: 5%;
+    border-radius: 10px;
     margin: 8px 0;
     padding: 5%;
+}
+.modal-content #form #phone, #name {
+    padding: 0 0 10px 0;
 }
 .modal-content #form #phone {
     padding: 0 0 10px 0;
@@ -336,19 +339,20 @@ body {
     justify-content: center;
 }
 #devices #device-selection {
-    margin: 15px 0 0 0;
-    max-width: 240px;
+    margin: 15px auto;
     background-color: var(--tl-white);
-    padding: 1%;
+    padding: 2%;
+    max-width: 240px;
     border-radius: 3%;
     text-decoration: none;
     color: var(--tl-dark);
+    text-align: center;
 }
 #devices #device-selection:hover {
     box-shadow: 0 3px 13px rgb(0 54 105 / 18%);
     transition: 0.6s;
 }
-#devices #device-selection .col-12 .title {
+#devices #device-selection .container .title {
     text-align: center;
     margin: 15px 0 0 0;
     font-size: 15px;
@@ -361,16 +365,12 @@ body {
 #devices #device-selection #image .image {
     position: absolute;
     margin: -25px 0 0 0;
-}
-#devices #device-selection #image {
-    justify-content: center;
+    width: 100%;
 }
 #devices .container #device-selection #image .circle-bg {
-    padding: 18%;
-    width: 2%;
-    height: 5px;
+    padding: 40px;
     background-color: var(--tl-grey);
-    border-radius: 200px;
+    border-radius: 100px;
 }
 #devices #device-selection #device-info {
     margin: 5px 0 15px 0;
@@ -454,7 +454,7 @@ body {
 #callback-form .row #form .form-title {
     font-size: 25px;
     color: var(--tl-white);
-    margin: 0 5px;
+    margin: 0 0 0 26px;
 }
 #callback-form .row .send-form {
     display: flex;
@@ -462,7 +462,9 @@ body {
 }
 #callback-form .row .send-form .field {
     width: 100%;
-    height: 100%;
+    height: 60%;
+    text-align: left;
+    display: flex;
     background-color: var(--tl-white);
     border-radius: 10px;
     margin: 5px 10px;
@@ -474,7 +476,7 @@ body {
 }
 #callback-form .row .send-form .field i {
     color: var(--tl-green);
-    margin: 6px 15px 0 0;
+    margin: 1px 0 0 0;
 }
 #callback-form .row.send-form button {
     font-weight: 500;
@@ -501,10 +503,10 @@ body {
 }
 #callback-form .row .privacy-policy {
     display: flex;
+    margin: 0 0 0 10px;
 }
 #callback-form .row .privacy-policy input {
-    height: 15px;
-    width: 15px;
+    height: 5px;
     appearance: none;
     border: 1px solid var(--tl-dark-blue);
     border-radius: 4px;
@@ -1353,10 +1355,12 @@ body {
 #repair-preview {
     background-color: var(--tl-dark);
     background-image: linear-gradient(147deg, #000000 0%, #2b6fc2 74%);
-    height: 500px;
+    min-height: 500px;
+    max-height: 800px;
 }
-#repair-preview #wrapper #left-side {
-    margin: 30px 120px 0 0px;
+#repair-preview #wrapper {
+    display: flex;
+    padding: 30px 0 20px 0;
 }
 #repair-preview #wrapper #left-side #breadcrumbs {
     margin: 0 0 30px 0;
@@ -1403,43 +1407,39 @@ body {
     color: var(--tl-white);
 }
 #repair-preview #wrapper #right-side {
-    margin: 70px 0 0 0;
+    margin: 30px 0 0 0;
 }
 #repair-preview #wrapper #right-side #find-device {
-    float: right;
-    margin: 0 50px 0 0;
+    margin: 0 0 5px 120px;
 }
-#repair-preview #wrapper #right-side #find-device .find-device-form {
-    padding: 5%;
-    background-color: var(--tl-white);
-    border-radius: 6%;
-    border-radius: 10px;
+#repair-preview #wrapper #right-side #find-device form {
+    display: flex;
 }
-#repair-preview #wrapper #right-side #find-device input {
+#repair-preview #wrapper #right-side #find-device form input, button {
     border: none;
-    background-color: transparent;
-    font-size: 14px;
 }
-#repair-preview #wrapper #right-side #find-device button {
-    position: absolute;
-    padding: 8px 8px 8px 8px;
-    margin: -10px 0 0 1px;
-    font-size: 18px;
-    color: var(--tl-white);
-    border: 1px solid var(--tl-dark-blue);
+#repair-preview #wrapper #right-side #find-device form input {
+    background-color: var(--tl-white);
+    border-radius: 6px;
+    padding: 2%;
+}
+#repair-preview #wrapper #right-side #find-device form button {
     background-color: var(--tl-dark-blue);
-    border-radius: 10px;
+    color: var(--tl-white);
+    border-radius: 6px;
+    margin: 0 5px;
+}
+#repair-preview #wrapper #right-side #find-device form button, input {
+    padding: 10px 10px;
 }
 #repair-benefits {
     position: absolute;
-    margin: 400px 0 0 115px;
+    margin: 0 0 0 100px;
 }
-#repair-benefits .col-12 {
-    width: 1140px;
+#repair-benefits .col-lg-12 {
     background-color: var(--tl-white);
     display: flex;
     justify-content: center;
-    margin: 30px 10px 0 0;
     padding: 3%;
     border-radius: 10px;
 }
@@ -1451,6 +1451,7 @@ body {
     margin: 30px 0 0 0;
 }
 #repair-price-list-preview .preview-text {
+    color: var(--tl-dark);
     text-align: left;
     font-size: 26px;
     margin: 0 10px 0 0;
@@ -1461,8 +1462,12 @@ body {
 }
 #repair-price-table #wrapper {
     display: flex;
+    margin: 20px 0;
 }
-#repair-price-table #service-table-header #table-header-item {
+#service-price-table {
+    margin: 10px 0 0 0;
+}
+#repair-price-table #table-header-item {
     background-color: var(--tl-dark-grey);
     color: var(--tl-white);
     font-size: 16px;
@@ -1472,38 +1477,37 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 5px rgb(0 0 0 / 3%);
 }
-#repair-price-table #service-table-body #table-body-item {
+#repair-price-table #table-body-item {
     color: var(--tl-dark);
     font-size: 16px;
     display: flex;
     background-color: var(--tl-white);
     padding: 2%;
     border-radius: 10px;
-    display: flex;
     box-shadow: 0 4px 5px rgb(0 0 0 / 3%);
-    margin: 7px 0 0 0;
+    margin: 10px 0;
 }
-#repair-price-table #service-table-body #table-body-item #price {
+#repair-price-table #table-body-item #price {
     font-weight: bold;
 }
-#repair-price-table #service-table-body #table-body-item .register-delivery {
+#repair-price-table #table-body-item .register-delivery {
     border: 1px solid var(--tl-dark-blue);
     color: var(--tl-dark-blue);
     padding: 10px 0;
     cursor: pointer;
-    width: 90%;
     margin: 0 0 0 25px;
     background-color: transparent;
+    width: 100%;
 }
-#repair-price-table #service-table-body #table-body-item .register-delivery:hover {
+#repair-price-table #table-body-item .register-delivery:hover {
     transition: all 0.5s;
     background-color: var(--tl-dark-blue);
     color: var(--tl-white);
 }
 #repair-price-table #promotion-cards {
-    margin: 25px 0 0 45px;
+    margin: 25px 0 0 0;
 }
-#repair-price-table #promotion-cards .col-12 {
+#repair-price-table #promotion-cards .col-lg-12 {
     margin: 10px 0;
     padding: 1%;
     border-radius: 2%;
@@ -1612,34 +1616,33 @@ body {
 }
 #repair-model-selection #wrapper {
     display: flex;
-    justify-content: left;
     flex-wrap: wrap;
 }
 #repair-model-selection #wrapper #device {
     display: flex;
-    padding: 2%;
+    padding: 30px 0;
+    max-width: 240px;
     background-color: var(--tl-white);
-    border-radius: 4%;
-    margin: 13px 30px 0 0;
-    width: 209px;
+    border-radius: 10px;
+    margin: 13px 0 0 0;
     box-shadow: 0 3px 5px rgb(0 54 105 / 18%);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 13px;
 }
 #repair-model-selection #wrapper #device:hover {
     box-shadow: 0 3px 20px rgb(0 54 105 / 18%);
     transition: all 0.6s;
 }
 #repair-model-selection #wrapper #device .circle-bg {
-    padding: 5%;
-    width: 90%;
-    height: 65px;
-    border-radius: 200px;
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 30px;
     background-color: var(--tl-grey);
 }
 #repair-model-selection #wrapper #device #image img {
     position: absolute;
-    margin: -72px 0 0 12px;
+    margin: -60px 0 0 -2px;
 }
 #repair-model-selection #wrapper #device #name {
     margin: 16px 0 0 10px;
@@ -1728,12 +1731,10 @@ body {
     padding: 3%;
     margin: 25px 0 0 0;
 }
-#repair-device #wrapper #description #image img {
-    position: absolute;
-    margin: 0 0 0 45px;
+#repair-device #wrapper #description{
+    display: flex;
 }
 #repair-device #wrapper #repair-description {
-    float: right;
     display: flex;
     justify-content: center;
 }
@@ -1800,9 +1801,8 @@ body {
     padding: 3%;
 }
 #repair-price-time #wrapper #price-time {
-    float: right;
     display: flex;
-    justify-content: center;
+    margin: 0 0 0 370px;
 }
 #repair-price-time #wrapper #price-time #list {
     display: flex;
@@ -1833,8 +1833,7 @@ body {
 }
 #repair-device-benefits #wrapper {
     display: flex;
-    justify-content: center;
-    padding: 2%;
+    padding: 25px 0;
     background-color: var(--tl-card-blue);
     color: var(--tl-grey);
 }
@@ -1843,10 +1842,11 @@ body {
 }
 #repair-device-benefits #wrapper #benefit .title {
     color: var(--tl-grey);
+    font-size: 13px;
 }
 #repair-device-benefits #wrapper #benefit i {
     font-size: 30px;
-    margin: 20px 0 0 20px;
+    margin: 20px 10px 0 0;
 }
 #repair-device-benefits #wrapper #benefit .title {
     margin: 0 0 10px 0;
@@ -1888,7 +1888,7 @@ body {
     margin: 5px 0 0 0;
 }
 
-@media (max-width: 993px) {
+@media screen and (max-width: 1000px) {
     #repair-navbar .menu {
         display: none;
     }
@@ -1937,8 +1937,53 @@ body {
         display: flex;
         justify-content: center;
     }
-}
-@media (max-width: 1000px) {
+    #repair-preview #wrapper {
+        display: block;
+        text-align: center;
+    }
+    #repair-preview #repair-benefits {
+        position: static;
+        text-align: center;
+        margin: 0 0 0 60px;
+    }
+    #repair-preview #repair-benefits .col-lg-12 {
+        display: block;
+    }
+    #repair-preview #repair-benefits .col-lg-3 {
+        margin: 10px 0;
+    }
+    #repair-preview #wrapper #right-side #find-device {
+        text-align: center;
+        display: flex;
+        width: 100%;
+        margin: 0 0 10px 0
+    }
+    #repair-preview #wrapper #right-side #find-device button {
+        position: static;
+    }
+    #repair-price-table #wrapper {
+        display: block; 
+    }
+    #repair-price-table #promotion-cards {
+        display: block;
+    }
+    #repair-price-table #promotion-cards {
+        width: 100%;
+    }
+    #repair-model-selection #wrapper #device {
+        display: block;
+        text-align: center;
+    }
+    #repair-model-selection #wrapper #device #image {
+        display: flex;
+        justify-content: center;
+    }
+    #repair-model-selection #wrapper #device #image .circle-bg {
+        height: 50px;
+    }
+    #repair-model-selection #wrapper #device #image img {
+        margin: -10px 0 0 0;
+    }
     #promotion-slider #image {
         display: flex;
         justify-content: center;
@@ -1963,12 +2008,58 @@ body {
     #footer .service-links .links .title .service-dropdown {
         display: block;
     }
+    #repair-price-table #wrapper {
+        margin: 200px 0 0 0;
+    }
+    #repair-preview #wrapper #right-side #find-device form {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+    #repair-preview #wrapper #right-side #find-device form input, button {
+        margin: 5px 0;
+    }
+    #repair-model-selection-preview .preview-text {
+        margin: 300px 0 0 0;
+        text-align: center;
+    }
+    #repair-device #wrapper #description {
+        display: block;
+        text-align: center;
+    }
+    #repair-device #wrapper #description #image, #repair-description {
+        width: 100%;
+        margin: 10px auto;
+    }
+    #repair-device #wrapper #description #repair-description {
+        display: block;
+    }
+    #repair-price-time #wrapper #price-time {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+    #repair-device-benefits #wrapper {
+        display: block;
+        text-align: center;
+    }
+    #repair-device-benefits #wrapper #benefit {
+        display: block;
+        padding: 5px 0;
+        border-bottom: 1px solid var(--tl-dark-grey);
+    }
+    #repair-device-benefits #wrapper #benefit i {
+        margin: 5px 0;
+    }
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     #promotion-slider #navs, #promotion-slider .owl-dots {
         display: none;
     }
     #reviews-preview #slider-buttons {
         display: none;
+    }
+    #repair-benefits {
+        margin: 0;
     }
 }

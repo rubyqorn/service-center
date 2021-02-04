@@ -28,7 +28,7 @@
 
     <section class="col-lg-12" id="devices">
         <div class="container justify-content-between">
-            <a href="repair-by-device.php" class="col-3" id="device-selection">
+            <a href="repair-by-device.php" class="col-lg-3" id="device-selection">
                 <div class="col-12">
                     <p class="title">
                         ТЕЛЕФОНЫ
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-3" id="device-selection">
+            <a href="repair-by-device.php" class="col-lg-3" id="device-selection">
                 <div class="col-12">
                     <p class="title">
                         ТЕЛЕФОНЫ
@@ -78,7 +78,7 @@
                     </div>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-3" id="device-selection">
+            <a href="repair-by-device.php" class="col-lg-3" id="device-selection">
                 <div class="col-12">
                     <p class="title">
                         ТЕЛЕФОНЫ
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-3" id="device-selection">
+            <a href="repair-by-device.php" class="col-lg-3" id="device-selection">
                 <div class="col-12">
                     <p class="title">
                         ТЕЛЕФОНЫ
@@ -128,7 +128,7 @@
                     </div>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-3" id="device-selection">
+            <a href="repair-by-device.php" class="col-lg-3" id="device-selection">
                 <div class="col-12">
                     <p class="title">
                         ТЕЛЕФОНЫ
@@ -153,7 +153,7 @@
                     </div>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-3" id="device-selection">
+            <a href="repair-by-device.php" class="col-lg-3" id="device-selection">
                 <div class="col-12">
                     <p class="title">
                         ТЕЛЕФОНЫ
@@ -178,7 +178,7 @@
                     </div>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-3" id="device-selection">
+            <a href="repair-by-device.php" class="col-lg-3" id="device-selection">
                 <div class="col-12">
                     <p class="title">
                         ТЕЛЕФОНЫ
@@ -203,7 +203,7 @@
                     </div>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-3" id="device-selection">
+            <a href="repair-by-device.php" class="col-lg-3" id="device-selection">
                 <div class="col-12">
                     <p class="title">
                         ТЕЛЕФОНЫ

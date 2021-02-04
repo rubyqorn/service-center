@@ -3,9 +3,9 @@
         require 'parts/header.php';
     ?>
 
-    <section class="container-full-width" id="repair-preview">
-        <div class="container" id="wrapper">
-            <div class="col-6" id="left-side">
+    <section class="col-lg-12" id="repair-preview">
+        <div class="container justify-content-between" id="wrapper">
+            <div class="col-lg-6" id="left-side">
                 <div class="col-lg-12" id="breadcrumbs">
                     <a href="/" class="hoverable">Главная</a>
                     <span class="current-page"> / Ремонт телефонов</span>
@@ -15,27 +15,27 @@
                         РЕМОНТ ТЕЛЕФОНОВ
                     </p>
                 </div>
-                <div class="col-9" id="description">
+                <div class="col-lg-9" id="description">
                     <p class="description-text">
                         Сломался телефон? Звоните! Ремонт за 1 час!
                         Диагностика всегда бесплатно. Бесплатная парковка.
                         Гарантия на работу и запчасти. Любые способы оплаты.
                     </p>
                 </div>
-                <div class="col-12" id="callback">
+                <div class="col-lg-12" id="callback">
                     <span>цена от 900 руб.</span>
                     <button class="callback-btn" id="request-form">
                         Оставить заявку
                     </button>
                 </div>
             </div>
-            <div class="col-5" id="right-side">
+            <div class="col-lg-4" id="right-side">
                 <img src="img/remont-telefonov2-min.png" alt="">
             </div>
         </div>
         <section class="container" id="repair-benefits">
-            <div class="col-12">
-                <div class="col-4">
+            <div class="col-lg-12">
+                <div class="col-lg-3">
                     <div class="benefit-item">
                         <p class="benefit-title">
                             <i class="fas fa-clock"></i>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-3">
                     <div class="benefit-item">
                         <p class="benefit-title">
                             <i class="fas fa-money-bill"></i>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-3">
                     <div class="benefit-item">
                         <p class="benefit-title">
                             <i class="far fa-credit-card"></i>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-3">
                     <div class="benefit-item">
                         <p class="benefit-title">
                             <i class="fas fa-parking"></i>

@@ -4,13 +4,17 @@
                 <p class="form-title">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</p>
                 <form action="/" method="post">
                     <div class="row send-form">
-                        <div class="field col-lg-4">
-                            <i class="fas fa-user"></i>
-                            <input type="text" name="name" placeholder="Имя" required>
+                        <div class="col-lg-4">
+                            <div class="field">
+                                <i class="fas fa-user"></i>
+                                <input type="text" name="name" placeholder="Имя" required>
+                            </div>
                         </div>
-                        <div class="field col-lg-4">
-                            <i class="fas fa-phone"></i>
-                            <input type="text" name="phone" placeholder="Телефон" required>
+                        <div class="col-lg-4">
+                            <div class="field">
+                                <i class="fas fa-phone"></i>
+                                <input type="text" name="phone" placeholder="Телефон" required>
+                            </div>
                         </div>
                         <div class="col-lg-3">
                             <button type="submit" class="send-form-btn">Перезвоните мне</button>

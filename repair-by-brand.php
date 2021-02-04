@@ -3,9 +3,9 @@
         require 'parts/header.php';
     ?>
 
-    <section class="container-full-width" id="repair-preview">
-        <div class="container" id="wrapper">
-            <div class="col-6" id="left-side">
+    <section class="col-lg-12" id="repair-preview">
+        <div class="container justify-content-between" id="wrapper">
+            <div class="col-lg-6" id="left-side">
                 <div class="col-lg-12" id="breadcrumbs">
                     <a href="/" class="hoverable">Главная</a>
                     <a href="/" class="hoverable"> / Ремонт телефонов</a>
@@ -16,33 +16,33 @@
                         РЕМОНТ iPhone
                     </p>
                 </div>
-                <div class="col-9" id="description">
+                <div class="col-lg-9" id="description">
                     <p class="description-text">
                         Сломался iPhone? Звоните! Ремонт за 20 минут! 
                         Ремонт в Вашем присутствии. Диагностика бесплатно. 
                         Гарантия на работу и запчасти. Любые способы оплаты.
                     </p>
                 </div>
-                <div class="col-12" id="callback">
+                <div class="col-lg-12" id="callback">
                     <span>цена от 800 руб.</span>
                     <button class="callback-btn">
                         Оставить заявку
                     </button>
                 </div>
             </div>
-            <div class="col-5" id="right-side">
-                <div class="col-6" id="find-device">
-                    <form action="/" class="find-device-form">
-                        <input type="search" name="device-name" class="field" placeholder="Поиск модели...">
-                        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            <div class="col-lg-5" id="right-side">
+                <div class="col-lg-6" id="find-device">
+                    <form action="/" method="post">
+                        <input type="text" name="device_name" class="field" placeholder="Поиск модели...">
+                        <button class="find-device-btn"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
-                <img src="img/remont-apple1-min.png" alt="">
+                <div class="col-lg-12"><img src="img/remont-apple1-min.png" alt=""></div>
             </div>
         </div>
         <section class="container" id="repair-benefits">
-            <div class="col-12">
-                <div class="col-4">
+            <div class="col-lg-12">
+                <div class="col-lg-3">
                     <div class="benefit-item">
                         <p class="benefit-title">
                             <i class="fas fa-clock"></i>
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-3">
                     <div class="benefit-item">
                         <p class="benefit-title">
                             <i class="fas fa-money-bill"></i>
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-3">
                     <div class="benefit-item">
                         <p class="benefit-title">
                             <i class="far fa-credit-card"></i>
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-3">
                     <div class="benefit-item">
                         <p class="benefit-title">
                             <i class="fas fa-parking"></i>
@@ -104,221 +104,221 @@
         </div>
     </section>
 
-    <section class="container" id="repair-model-selection">
-        <div class="col-12" id="wrapper">
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+    <section class="col-lg-12" id="repair-model-selection">
+        <div class="container justify-content-between" id="wrapper">
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-6" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
-            <a href="repair-by-device.php" class="col-2" id="device">
-                <div class="col-5" id="image">
-                    <div class="circle-bg"></div>
+            <a href="repair-by-device.php" class="col-lg-3" id="device">
+                <div class="col-lg-5" id="image">
+                    <div class="circle-bg col-lg-12 col-sm-3"></div>
                     <img src="img/iPhone 12 Pro Max-min.png" alt="">
                 </div>
-                <div class="col-6" id="name">
+                <div class="col-lg-7" id="name">
                     <p class="device-name">iPhone 12 Pro Max</p>
                 </div>
             </a>
