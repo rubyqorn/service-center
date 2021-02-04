@@ -1,0 +1,550 @@
+// widths
+$max_width: 1200px;
+$middle_width: 992px;
+$small_width: 768px;
+$extra_small_width: 576px;
+
+// columns
+$one_column: 8.333333%;
+$two_columns: 16.666667%;
+$three_columns: 25%;
+$four_columns: 33.333333%;
+$five_columns: 41.666667%;
+$six_columns: 50%;
+$seven_columns: 58.333333%;
+$eight_columns: 66.666667%;
+$nine_columns: 75%;
+$ten_columns: 83.333333%;
+$eleven_columns: 91.666667%;
+$twelve_columns: 100%;
+
+// default margins and paddings
+$default_padding: 15px;
+$default_margin: auto;
+
+// justify contents
+$justify_start: start;
+$justify_flex_start: flex-start;
+$justify_end: end;
+$justify_flex_end: flex-end;
+$justify_center: center;
+$justify_flex_center: center;
+$justify_between: justify;
+$justify_flex_between: space-between;
+$justify_around: distribute;
+$justify_flex_around: space-around;
+
+html {
+    box-sizing: border-box;
+  }
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: $twelve_columns;
+  padding-right: $default_padding;
+  padding-left: $default_padding;
+  margin-right: $default_margin;
+  margin-left: $default_margin;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -$default_margin;
+    margin-left: -$default_margin;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: $twelve_columns;
+  padding-right: $default_padding;
+  padding-left: $default_padding;
+}
+
+.col-1 {
+    -ms-flex: 0 0 $one_column;
+    flex: 0 0 $one_column;
+    max-width: $one_column;
+}
+
+.col-2 {
+    -ms-flex: 0 0 $two_columns;
+    flex: 0 0 $two_columns;
+    max-width: $two_columns;
+}
+
+.col-3 {
+    -ms-flex: 0 0 $three_columns;
+    flex: 0 0 $three_columns;
+    max-width: $three_columns;
+}
+
+.col-4 {
+    -ms-flex: 0 0 $four_columns;
+    flex: 0 0 $four_columns;
+    max-width: $four_columns;
+}
+
+.col-5 {
+    -ms-flex: 0 0 $five_columns;
+    flex: 0 0 $five_columns;
+    max-width: $five_columns;
+}
+
+.col-6 {
+    -ms-flex: 0 0 $six_columns;
+    flex: 0 0 $six_columns;
+    max-width: $six_columns;
+}
+
+.col-7 {
+    -ms-flex: 0 0 $seven_columns;
+    flex: 0 0 $seven_columns;
+    max-width: $seven_columns;
+}
+
+.col-8 {
+    -ms-flex: 0 0 $eight_columns;
+    flex: 0 0 $eight_columns;
+    max-width: $eight_columns;
+}
+
+.col-9 {
+    -ms-flex: 0 0 $nine_columns;
+    flex: 0 0 $nine_columns;
+    max-width: $nine_columns;
+}
+
+.col-10 {
+    -ms-flex: 0 0 $ten_columns;
+    flex: 0 0 $ten_columns;
+    max-width: $ten_columns;
+}
+
+.col-11 {
+    -ms-flex: 0 0 $eleven_columns;
+    flex: 0 0 $eleven_columns;
+    max-width: $eleven_columns;
+}
+
+.col-12 {
+    -ms-flex: 0 0 $twelve_columns;
+    flex: 0 0 $twelve_columns;
+    max-width: $twelve_columns;
+}
+
+.justify-content-start {
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+}
+
+.justify-content-end {
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+}
+
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+
+.justify-content-around {
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important;
+}
+
+@media (min-width: $extra_small_width) {
+    .container, .container-sm {
+        max-width: 540px;
+    }
+    .col-sm {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: $twelve_columns;
+    }
+    .col-sm-1 {
+        -ms-flex: 0 0 $one_column;
+        flex: 0 0 $one_column;
+        max-width: $one_column;
+    }
+    .col-sm-2 {
+        -ms-flex: 0 0 $two_columns;
+        flex: 0 0 $two_columns;
+        max-width: $two_columns;
+    }
+    .col-sm-3 {
+        -ms-flex: 0 0 $three_columns;
+        flex: 0 0 $three_columns;
+        max-width: $three_columns;
+    }
+    .col-sm-4 {
+        -ms-flex: 0 0 $four_columns;
+        flex: 0 0 $four_columns;
+        max-width: $four_columns;
+    }
+    .col-sm-5 {
+        -ms-flex: 0 0 $five_columns;
+        flex: 0 0 $five_columns;
+        max-width: $five_columns;
+    }
+    .col-sm-6 {
+        -ms-flex: 0 0 $six_columns;
+        flex: 0 0 $six_columns;
+        max-width: $six_columns;
+    }
+    .col-sm-7 {
+        -ms-flex: 0 0 $seven_columns;
+        flex: 0 0 $seven_columns;
+        max-width: $seven_columns;
+    }
+    .col-sm-8 {
+        -ms-flex: 0 0 $eight_columns;
+        flex: 0 0 $eight_columns;
+        max-width: $eight_columns;
+    }
+    .col-sm-9 {
+        -ms-flex: 0 0 $nine_columns;
+        flex: 0 0 $nine_columns;
+        max-width: $nine_columns;
+    }
+    .col-sm-10 {
+        -ms-flex: 0 0 $ten_columns;
+        flex: 0 0 $ten_columns;
+        max-width: $ten_columns;
+    }
+    .col-sm-11 {
+        -ms-flex: 0 0 $eleven_columns;
+        flex: 0 0 $eleven_columns;
+        max-width: $eleven_columns;
+    }
+    .col-sm-12 {
+        -ms-flex: 0 0 $twelve_columns;
+        flex: 0 0 $twelve_columns;
+        max-width: $twelve_columns;
+    }
+    
+    .justify-content-sm-start {
+        -ms-flex-pack: $justify_start !important;
+        justify-content: $justify_flex_start !important;
+    }
+    .justify-content-sm-end {
+        -ms-flex-pack: $justify_end !important;
+        justify-content: $justify_flex_end !important;
+    }
+    .justify-content-sm-center {
+        -ms-flex-pack: $justify_center !important;
+        justify-content: $justify_flex_center !important;
+    }
+    .justify-content-sm-between {
+        -ms-flex-pack: $justify_between !important;
+        justify-content: $justify_flex_between !important;
+    }
+    .justify-content-sm-around {
+        -ms-flex-pack: $justify_around !important;
+        justify-content: $justify_flex_around !important;
+    }
+}
+
+@media (min-width: $small_width) {
+    .container, .container-sm, .container-md {
+        max-width: 720px;
+    }
+    .col-md {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: $twelve_columns;
+    }
+    .col-md-1 {
+        -ms-flex: 0 0 $one_column;
+        flex: 0 0 $one_column;
+        max-width: $one_column;
+    }
+    .col-md-2 {
+        -ms-flex: 0 0 $two_columns;
+        flex: 0 0 $two_columns;
+        max-width: $two_columns;
+    }
+    .col-md-3 {
+        -ms-flex: 0 0 $three_columns;
+        flex: 0 0 $three_columns;
+        max-width: $three_columns;
+    }
+    .col-md-4 {
+        -ms-flex: 0 0 $four_columns;
+        flex: 0 0 $four_columns;
+        max-width: $four_columns;
+    }
+    .col-md-5 {
+        -ms-flex: 0 0 $five_columns;
+        flex: 0 0 $five_columns;
+        max-width: $five_columns;
+    }
+    .col-md-6 {
+        -ms-flex: 0 0 $six_columns;
+        flex: 0 0 $six_columns;
+        max-width: $six_columns;
+    }
+    .col-md-7 {
+        -ms-flex: 0 0 $seven_columns;
+        flex: 0 0 $seven_columns;
+        max-width: $seven_columns;
+    }
+    .col-md-8 {
+        -ms-flex: 0 0 $eight_columns;
+        flex: 0 0 $eight_columns;
+        max-width: $eight_columns;
+    }
+    .col-md-9 {
+        -ms-flex: 0 0 $nine_columns;
+        flex: 0 0 $nine_columns;
+        max-width: $nine_columns;
+    }
+    .col-md-10 {
+        -ms-flex: 0 0 $ten_columns;
+        flex: 0 0 $ten_columns;
+        max-width: $ten_columns;
+        }
+    .col-md-11 {
+        -ms-flex: 0 0 $eleven_columns;
+        flex: 0 0 $eleven_columns;
+        max-width: $eleven_columns;
+    }
+    .col-md-12 {
+        -ms-flex: 0 0 $twelve_columns;
+        flex: 0 0 $twelve_columns;
+        max-width: $twelve_columns;
+    }
+    .justify-content-md-start {
+        -ms-flex-pack: $justify_start !important;
+        justify-content: $justify_flex_start !important;
+    }
+    .justify-content-md-end {
+        -ms-flex-pack: $justify_end !important;
+        justify-content: $justify_flex_end !important;
+    }
+    .justify-content-md-center {
+        -ms-flex-pack: $justify_center !important;
+        justify-content: $justify_flex_center !important;
+    }
+    .justify-content-md-between {
+        -ms-flex-pack: $justify_between !important;
+        justify-content: $justify_flex_between !important;
+    }
+    .justify-content-md-around {
+        -ms-flex-pack: $justify_around !important;
+        justify-content: $justify_flex_around !important;
+    }
+}
+
+@media (min-width: $middle_width) {
+    .container, .container-sm, .container-md, .container-lg {
+        max-width: 960px;
+    }
+    .col-lg {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: $twelve_columns;
+    }
+    .col-lg-1 {
+        -ms-flex: 0 0 $one_column;
+        flex: 0 0 $one_column;
+        max-width: $one_column;
+    }
+    .col-lg-2 {
+        -ms-flex: 0 0 $two_columns;
+        flex: 0 0 $two_columns;
+        max-width: $two_columns;
+    }
+    .col-lg-3 {
+        -ms-flex: 0 0 $three_columns;
+        flex: 0 0 $three_columns;
+        max-width: $three_columns;
+    }
+    .col-lg-4 {
+        -ms-flex: 0 0 $four_columns;
+        flex: 0 0 $four_columns;
+        max-width: $four_columns;
+    }
+    .col-lg-5 {
+        -ms-flex: 0 0 $five_columns;
+        flex: 0 0 $five_columns;
+        max-width: $five_columns;
+    }
+    .col-lg-6 {
+        -ms-flex: 0 0 $six_columns;
+        flex: 0 0 $six_columns;
+        max-width: $six_columns;
+    }
+    .col-lg-7 {
+        -ms-flex: 0 0 $seven_columns;
+        flex: 0 0 $seven_columns;
+        max-width: $seven_columns;
+    }
+    .col-lg-8 {
+        -ms-flex: 0 0 $eight_columns;
+        flex: 0 0 $eight_columns;
+        max-width: $eight_columns;
+    }
+    .col-lg-9 {
+        -ms-flex: 0 0 $nine_columns;
+        flex: 0 0 $nine_columns;
+        max-width: $nine_columns;
+    }
+    .col-lg-10 {
+        -ms-flex: 0 0 $ten_columns;
+        flex: 0 0 $ten_columns;
+        max-width: $ten_columns;
+    }
+    .col-lg-11 {
+        -ms-flex: 0 0 $eleven_columns;
+        flex: 0 0 $eleven_columns;
+        max-width: $eleven_columns;
+    }
+    .col-lg-12 {
+        -ms-flex: 0 0 $twelve_columns;
+        flex: 0 0 $twelve_columns;
+        max-width: $twelve_columns;
+    }
+    .justify-content-lg-start {
+        -ms-flex-pack: $justify_start !important;
+        justify-content: $justify_flex_start !important;
+    }
+    .justify-content-lg-end {
+        -ms-flex-pack: $justify_end !important;
+        justify-content: $justify_flex_end !important;
+    }
+    .justify-content-lg-center {
+        -ms-flex-pack: $justify_center !important;
+        justify-content: $justify_flex_center !important;
+    }
+    .justify-content-lg-between {
+        -ms-flex-pack: $justify_between !important;
+        justify-content: $justify_flex_between !important;
+    }
+    .justify-content-lg-around {
+        -ms-flex-pack: $justify_around !important;
+        justify-content: $justify_flex_around !important;
+    }
+}
+
+@media (min-width: $max_width) {
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+        max-width: 1140px;
+    }
+    .col-xl {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: $twelve_columns;
+    }
+    .col-xl-1 {
+        -ms-flex: 0 0 $one_column;
+        flex: 0 0 $one_column;
+        max-width: $one_column;
+    }
+    .col-xl-2 {
+        -ms-flex: 0 0 $two_columns;
+        flex: 0 0 $two_columns;
+        max-width: $two_columns;
+    }
+    .col-xl-3 {
+        -ms-flex: 0 0 $three_columns;
+        flex: 0 0 $three_columns;
+        max-width: $three_columns;
+    }
+    .col-xl-4 {
+        -ms-flex: 0 0 $four_columns;
+        flex: 0 0 $four_columns;
+        max-width: $four_columns;
+    }
+    .col-xl-5 {
+        -ms-flex: 0 0 $five_columns;
+        flex: 0 0 $five_columns;
+        max-width: $five_columns;
+    }
+    .col-xl-6 {
+        -ms-flex: 0 0 $six_columns;
+        flex: 0 0 $six_columns;
+        max-width: $six_columns;
+    }
+    .col-xl-7 {
+        -ms-flex: 0 0 $seven_columns;
+        flex: 0 0 $seven_columns;
+        max-width: $seven_columns;
+    }
+    .col-xl-8 {
+        -ms-flex: 0 0 $eight_columns;
+        flex: 0 0 $eight_columns;
+        max-width: $eight_columns;
+    }
+    .col-xl-9 {
+        -ms-flex: 0 0 $nine_columns;
+        flex: 0 0 $nine_columns;
+        max-width: $nine_columns;
+    }
+    .col-xl-10 {
+        -ms-flex: 0 0 $ten_columns;
+        flex: 0 0 $ten_columns;
+        max-width: $ten_columns;
+    }
+    .col-xl-11 {
+        -ms-flex: 0 0 $eleven_columns;
+        flex: 0 0 $eleven_columns;
+        max-width: $eleven_columns;
+    }
+    .col-xl-12 {
+        -ms-flex: 0 0 $twelve_columns;
+        flex: 0 0 $twelve_columns;
+        max-width: $twelve_columns;
+    }
+    .justify-content-xl-start {
+        -ms-flex-pack: $justify_start !important;
+        justify-content: $justify_flex_start !important;
+    }
+    .justify-content-xl-end {
+        -ms-flex-pack: $justify_end !important;
+        justify-content: $justify_flex_end !important;
+    }
+    .justify-content-xl-center {
+        -ms-flex-pack: $justify_center !important;
+        justify-content: $justify_flex_center !important;
+    }
+    .justify-content-xl-between {
+        -ms-flex-pack: $justify_between!important;
+        justify-content: $justify_flex_between !important;
+    }
+    .justify-content-xl-around {
+        -ms-flex-pack: $justify_around !important;
+        justify-content: $justify_flex_around !important;
+    }
+}
+
