@@ -34,6 +34,18 @@ $justify_flex_between: space-between;
 $justify_around: distribute;
 $justify_flex_around: space-around;
 
+$columns: (
+    "1": $one_column, "2": $two_columns, "3": $three_columns, "4": $four_columns,
+    "5": $five_columns, "6": $six_columns, "7": $seven_columns, "8": $eight_columns,
+    "9": $nine_columns, "10": $ten_columns, "11": $eleven_columns, "12": $twelve_columns 
+);
+
+$justifies: (
+    start: $justify_flex_start, end: $justify_flex_end,
+    center: $justify_flex_center, between: $justify_flex_between,
+    around: $justify_flex_around
+);
+
 html {
     box-sizing: border-box;
 }
@@ -78,102 +90,72 @@ html {
   padding-left: $default_padding;
 }
 
-.col-1 {
-    -ms-flex: 0 0 $one_column;
-    flex: 0 0 $one_column;
-    max-width: $one_column;
+@mixin justify ($columnWidth: false) {
+    @if $columnWidth {
+        @each $name, $flex in $justifies {
+
+            @if $name == "between" {
+                .justify-content-#{$columnWidth}-#{$name} {
+                    -ms-flex-pack: justify !important;
+                    justify-content: $flex !important;
+                }
+            } @else if $name == "around" {
+                .justify-content-#{$columnWidth}-#{$name} {
+                    -ms-flex-pack: distribute !important;
+                    justify-content: $flex !important;
+                }
+            } @else {
+                .justify-content-#{$columnWidth}-#{$name} {
+                    -ms-flex-pack: $name !important;
+                    justify-content: $flex !important;
+                }
+            }
+
+        }
+    } @else {
+        @each $name, $flex in $justifies {
+            @if $name == "between" {
+                .justify-content-#{$name} {
+                    -ms-flex-pack: justify !important;
+                    justify-content: $flex !important;
+                }
+            } @else if $name == "around" {
+                .justify-content-#{$name} {
+                    -ms-flex-pack: distribute !important;
+                    justify-content: $flex !important;
+                }
+            } @else {
+                .justify-content-#{$name} {
+                    -ms-flex-pack: $name !important;
+                    justify-content: $flex !important;
+                }
+            }
+        }
+    }
 }
 
-.col-2 {
-    -ms-flex: 0 0 $two_columns;
-    flex: 0 0 $two_columns;
-    max-width: $two_columns;
+@mixin columns ($columnWidth: false) {
+    @if $columnWidth {
+        @each $columnName, $columnSize in $columns {
+            .col-#{$columnWidth}-#{$columnName} {
+                -ms-flex: 0 0 $columnSize;
+                flex: 0 0 $columnSize;
+                max-width: $columnSize;
+            }
+        }
+    } @else {
+        @each $columnName, $columnSize in $columns {
+            .col-#{$columnName} {
+                -ms-flex: 0 0 $columnSize;
+                flex: 0 0 $columnSize;
+                max-width: $columnSize;
+            }
+        } 
+    }
 }
 
-.col-3 {
-    -ms-flex: 0 0 $three_columns;
-    flex: 0 0 $three_columns;
-    max-width: $three_columns;
-}
-
-.col-4 {
-    -ms-flex: 0 0 $four_columns;
-    flex: 0 0 $four_columns;
-    max-width: $four_columns;
-}
-
-.col-5 {
-    -ms-flex: 0 0 $five_columns;
-    flex: 0 0 $five_columns;
-    max-width: $five_columns;
-}
-
-.col-6 {
-    -ms-flex: 0 0 $six_columns;
-    flex: 0 0 $six_columns;
-    max-width: $six_columns;
-}
-
-.col-7 {
-    -ms-flex: 0 0 $seven_columns;
-    flex: 0 0 $seven_columns;
-    max-width: $seven_columns;
-}
-
-.col-8 {
-    -ms-flex: 0 0 $eight_columns;
-    flex: 0 0 $eight_columns;
-    max-width: $eight_columns;
-}
-
-.col-9 {
-    -ms-flex: 0 0 $nine_columns;
-    flex: 0 0 $nine_columns;
-    max-width: $nine_columns;
-}
-
-.col-10 {
-    -ms-flex: 0 0 $ten_columns;
-    flex: 0 0 $ten_columns;
-    max-width: $ten_columns;
-}
-
-.col-11 {
-    -ms-flex: 0 0 $eleven_columns;
-    flex: 0 0 $eleven_columns;
-    max-width: $eleven_columns;
-}
-
-.col-12 {
-    -ms-flex: 0 0 $twelve_columns;
-    flex: 0 0 $twelve_columns;
-    max-width: $twelve_columns;
-}
-
-.justify-content-start {
-    -ms-flex-pack: $justify_start !important;
-    justify-content: $justify_flex_start !important;
-}
-
-.justify-content-end {
-    -ms-flex-pack: $justify_end !important;
-    justify-content: $justify_flex_end !important;
-}
-
-.justify-content-center {
-    -ms-flex-pack: $justify_center !important;
-    justify-content: $justify_flex_center !important;
-}
-
-.justify-content-between {
-    -ms-flex-pack: $justify_between !important;
-    justify-content: $justify_flex_between !important;
-}
-
-.justify-content-around {
-    -ms-flex-pack: distribute !important;
-    justify-content: space-around !important;
-}
+@include columns();
+@include justify();
 
 @media (min-width: $extra_small_width) {
     .container, .container-sm {
@@ -186,87 +168,10 @@ html {
         flex-grow: 1;
         max-width: $twelve_columns;
     }
-    .col-sm-1 {
-        -ms-flex: 0 0 $one_column;
-        flex: 0 0 $one_column;
-        max-width: $one_column;
-    }
-    .col-sm-2 {
-        -ms-flex: 0 0 $two_columns;
-        flex: 0 0 $two_columns;
-        max-width: $two_columns;
-    }
-    .col-sm-3 {
-        -ms-flex: 0 0 $three_columns;
-        flex: 0 0 $three_columns;
-        max-width: $three_columns;
-    }
-    .col-sm-4 {
-        -ms-flex: 0 0 $four_columns;
-        flex: 0 0 $four_columns;
-        max-width: $four_columns;
-    }
-    .col-sm-5 {
-        -ms-flex: 0 0 $five_columns;
-        flex: 0 0 $five_columns;
-        max-width: $five_columns;
-    }
-    .col-sm-6 {
-        -ms-flex: 0 0 $six_columns;
-        flex: 0 0 $six_columns;
-        max-width: $six_columns;
-    }
-    .col-sm-7 {
-        -ms-flex: 0 0 $seven_columns;
-        flex: 0 0 $seven_columns;
-        max-width: $seven_columns;
-    }
-    .col-sm-8 {
-        -ms-flex: 0 0 $eight_columns;
-        flex: 0 0 $eight_columns;
-        max-width: $eight_columns;
-    }
-    .col-sm-9 {
-        -ms-flex: 0 0 $nine_columns;
-        flex: 0 0 $nine_columns;
-        max-width: $nine_columns;
-    }
-    .col-sm-10 {
-        -ms-flex: 0 0 $ten_columns;
-        flex: 0 0 $ten_columns;
-        max-width: $ten_columns;
-    }
-    .col-sm-11 {
-        -ms-flex: 0 0 $eleven_columns;
-        flex: 0 0 $eleven_columns;
-        max-width: $eleven_columns;
-    }
-    .col-sm-12 {
-        -ms-flex: 0 0 $twelve_columns;
-        flex: 0 0 $twelve_columns;
-        max-width: $twelve_columns;
-    }
     
-    .justify-content-sm-start {
-        -ms-flex-pack: $justify_start !important;
-        justify-content: $justify_flex_start !important;
-    }
-    .justify-content-sm-end {
-        -ms-flex-pack: $justify_end !important;
-        justify-content: $justify_flex_end !important;
-    }
-    .justify-content-sm-center {
-        -ms-flex-pack: $justify_center !important;
-        justify-content: $justify_flex_center !important;
-    }
-    .justify-content-sm-between {
-        -ms-flex-pack: $justify_between !important;
-        justify-content: $justify_flex_between !important;
-    }
-    .justify-content-sm-around {
-        -ms-flex-pack: $justify_around !important;
-        justify-content: $justify_flex_around !important;
-    }
+    @include columns("sm");
+    
+    @include justify("sm");
 }
 
 @media (min-width: $small_width) {
@@ -280,86 +185,10 @@ html {
         flex-grow: 1;
         max-width: $twelve_columns;
     }
-    .col-md-1 {
-        -ms-flex: 0 0 $one_column;
-        flex: 0 0 $one_column;
-        max-width: $one_column;
-    }
-    .col-md-2 {
-        -ms-flex: 0 0 $two_columns;
-        flex: 0 0 $two_columns;
-        max-width: $two_columns;
-    }
-    .col-md-3 {
-        -ms-flex: 0 0 $three_columns;
-        flex: 0 0 $three_columns;
-        max-width: $three_columns;
-    }
-    .col-md-4 {
-        -ms-flex: 0 0 $four_columns;
-        flex: 0 0 $four_columns;
-        max-width: $four_columns;
-    }
-    .col-md-5 {
-        -ms-flex: 0 0 $five_columns;
-        flex: 0 0 $five_columns;
-        max-width: $five_columns;
-    }
-    .col-md-6 {
-        -ms-flex: 0 0 $six_columns;
-        flex: 0 0 $six_columns;
-        max-width: $six_columns;
-    }
-    .col-md-7 {
-        -ms-flex: 0 0 $seven_columns;
-        flex: 0 0 $seven_columns;
-        max-width: $seven_columns;
-    }
-    .col-md-8 {
-        -ms-flex: 0 0 $eight_columns;
-        flex: 0 0 $eight_columns;
-        max-width: $eight_columns;
-    }
-    .col-md-9 {
-        -ms-flex: 0 0 $nine_columns;
-        flex: 0 0 $nine_columns;
-        max-width: $nine_columns;
-    }
-    .col-md-10 {
-        -ms-flex: 0 0 $ten_columns;
-        flex: 0 0 $ten_columns;
-        max-width: $ten_columns;
-        }
-    .col-md-11 {
-        -ms-flex: 0 0 $eleven_columns;
-        flex: 0 0 $eleven_columns;
-        max-width: $eleven_columns;
-    }
-    .col-md-12 {
-        -ms-flex: 0 0 $twelve_columns;
-        flex: 0 0 $twelve_columns;
-        max-width: $twelve_columns;
-    }
-    .justify-content-md-start {
-        -ms-flex-pack: $justify_start !important;
-        justify-content: $justify_flex_start !important;
-    }
-    .justify-content-md-end {
-        -ms-flex-pack: $justify_end !important;
-        justify-content: $justify_flex_end !important;
-    }
-    .justify-content-md-center {
-        -ms-flex-pack: $justify_center !important;
-        justify-content: $justify_flex_center !important;
-    }
-    .justify-content-md-between {
-        -ms-flex-pack: $justify_between !important;
-        justify-content: $justify_flex_between !important;
-    }
-    .justify-content-md-around {
-        -ms-flex-pack: $justify_around !important;
-        justify-content: $justify_flex_around !important;
-    }
+    
+    @include columns("md");
+
+    @include justify("md");
 }
 
 @media (min-width: $middle_width) {
@@ -373,86 +202,10 @@ html {
         flex-grow: 1;
         max-width: $twelve_columns;
     }
-    .col-lg-1 {
-        -ms-flex: 0 0 $one_column;
-        flex: 0 0 $one_column;
-        max-width: $one_column;
-    }
-    .col-lg-2 {
-        -ms-flex: 0 0 $two_columns;
-        flex: 0 0 $two_columns;
-        max-width: $two_columns;
-    }
-    .col-lg-3 {
-        -ms-flex: 0 0 $three_columns;
-        flex: 0 0 $three_columns;
-        max-width: $three_columns;
-    }
-    .col-lg-4 {
-        -ms-flex: 0 0 $four_columns;
-        flex: 0 0 $four_columns;
-        max-width: $four_columns;
-    }
-    .col-lg-5 {
-        -ms-flex: 0 0 $five_columns;
-        flex: 0 0 $five_columns;
-        max-width: $five_columns;
-    }
-    .col-lg-6 {
-        -ms-flex: 0 0 $six_columns;
-        flex: 0 0 $six_columns;
-        max-width: $six_columns;
-    }
-    .col-lg-7 {
-        -ms-flex: 0 0 $seven_columns;
-        flex: 0 0 $seven_columns;
-        max-width: $seven_columns;
-    }
-    .col-lg-8 {
-        -ms-flex: 0 0 $eight_columns;
-        flex: 0 0 $eight_columns;
-        max-width: $eight_columns;
-    }
-    .col-lg-9 {
-        -ms-flex: 0 0 $nine_columns;
-        flex: 0 0 $nine_columns;
-        max-width: $nine_columns;
-    }
-    .col-lg-10 {
-        -ms-flex: 0 0 $ten_columns;
-        flex: 0 0 $ten_columns;
-        max-width: $ten_columns;
-    }
-    .col-lg-11 {
-        -ms-flex: 0 0 $eleven_columns;
-        flex: 0 0 $eleven_columns;
-        max-width: $eleven_columns;
-    }
-    .col-lg-12 {
-        -ms-flex: 0 0 $twelve_columns;
-        flex: 0 0 $twelve_columns;
-        max-width: $twelve_columns;
-    }
-    .justify-content-lg-start {
-        -ms-flex-pack: $justify_start !important;
-        justify-content: $justify_flex_start !important;
-    }
-    .justify-content-lg-end {
-        -ms-flex-pack: $justify_end !important;
-        justify-content: $justify_flex_end !important;
-    }
-    .justify-content-lg-center {
-        -ms-flex-pack: $justify_center !important;
-        justify-content: $justify_flex_center !important;
-    }
-    .justify-content-lg-between {
-        -ms-flex-pack: $justify_between !important;
-        justify-content: $justify_flex_between !important;
-    }
-    .justify-content-lg-around {
-        -ms-flex-pack: $justify_around !important;
-        justify-content: $justify_flex_around !important;
-    }
+       
+    @include columns("lg");
+
+    @include justify("lg");
 }
 
 @media (min-width: $max_width) {
@@ -466,85 +219,9 @@ html {
         flex-grow: 1;
         max-width: $twelve_columns;
     }
-    .col-xl-1 {
-        -ms-flex: 0 0 $one_column;
-        flex: 0 0 $one_column;
-        max-width: $one_column;
-    }
-    .col-xl-2 {
-        -ms-flex: 0 0 $two_columns;
-        flex: 0 0 $two_columns;
-        max-width: $two_columns;
-    }
-    .col-xl-3 {
-        -ms-flex: 0 0 $three_columns;
-        flex: 0 0 $three_columns;
-        max-width: $three_columns;
-    }
-    .col-xl-4 {
-        -ms-flex: 0 0 $four_columns;
-        flex: 0 0 $four_columns;
-        max-width: $four_columns;
-    }
-    .col-xl-5 {
-        -ms-flex: 0 0 $five_columns;
-        flex: 0 0 $five_columns;
-        max-width: $five_columns;
-    }
-    .col-xl-6 {
-        -ms-flex: 0 0 $six_columns;
-        flex: 0 0 $six_columns;
-        max-width: $six_columns;
-    }
-    .col-xl-7 {
-        -ms-flex: 0 0 $seven_columns;
-        flex: 0 0 $seven_columns;
-        max-width: $seven_columns;
-    }
-    .col-xl-8 {
-        -ms-flex: 0 0 $eight_columns;
-        flex: 0 0 $eight_columns;
-        max-width: $eight_columns;
-    }
-    .col-xl-9 {
-        -ms-flex: 0 0 $nine_columns;
-        flex: 0 0 $nine_columns;
-        max-width: $nine_columns;
-    }
-    .col-xl-10 {
-        -ms-flex: 0 0 $ten_columns;
-        flex: 0 0 $ten_columns;
-        max-width: $ten_columns;
-    }
-    .col-xl-11 {
-        -ms-flex: 0 0 $eleven_columns;
-        flex: 0 0 $eleven_columns;
-        max-width: $eleven_columns;
-    }
-    .col-xl-12 {
-        -ms-flex: 0 0 $twelve_columns;
-        flex: 0 0 $twelve_columns;
-        max-width: $twelve_columns;
-    }
-    .justify-content-xl-start {
-        -ms-flex-pack: $justify_start !important;
-        justify-content: $justify_flex_start !important;
-    }
-    .justify-content-xl-end {
-        -ms-flex-pack: $justify_end !important;
-        justify-content: $justify_flex_end !important;
-    }
-    .justify-content-xl-center {
-        -ms-flex-pack: $justify_center !important;
-        justify-content: $justify_flex_center !important;
-    }
-    .justify-content-xl-between {
-        -ms-flex-pack: $justify_between!important;
-        justify-content: $justify_flex_between !important;
-    }
-    .justify-content-xl-around {
-        -ms-flex-pack: $justify_around !important;
-        justify-content: $justify_flex_around !important;
-    }
+       
+    @include columns("xl");
+
+    @include justify("xl");
 }
 
